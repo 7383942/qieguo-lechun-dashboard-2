@@ -1,0 +1,2652 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Y26M8M9小红书投放数据看板</title>
+<link rel="icon" href="data:image/png;base64,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">
+<style>
+  :root{
+    --bg:#F5F4EF;
+    --paper:#FFFFFF;
+    --ink:#17211B;
+    --ink-2:#3E4A42;
+    --muted:#778177;
+    --muted-2:#9AA29A;
+    --line:#E8E4D9;
+    --line-soft:#F0EDE4;
+    --green:#0E8A4A;
+    --green-deep:#0A6B39;
+    --green-soft:#EAF5EE;
+    --yellow:#F5C400;
+    --yellow-soft:#FFF8DB;
+    --red:#DF2A1F;
+    --red-soft:#FDEDEA;
+    --shadow:0 12px 32px rgba(23,33,27,.06);
+    --radius:18px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    min-height:100vh;
+    color:var(--ink);
+    background:
+      radial-gradient(1100px 520px at 102% -8%, rgba(245,196,0,.13), transparent 62%),
+      radial-gradient(900px 480px at -8% 2%, rgba(14,138,74,.08), transparent 58%),
+      var(--bg);
+    font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+  }
+  button,input,select{font:inherit}
+  button{color:inherit}
+  a{color:inherit}
+  ::selection{background:rgba(14,138,74,.18)}
+
+  .topline{height:4px;background:linear-gradient(90deg,var(--green) 0 42%,var(--yellow) 42% 68%,var(--red) 68% 100%)}
+
+  .hero{
+    max-width:1480px;margin:0 auto;padding:30px 28px 22px;
+    display:flex;justify-content:space-between;align-items:flex-start;gap:28px;
+  }
+  .logos{display:flex;align-items:center;gap:12px;margin-bottom:22px}
+  .logos img{display:block;height:30px;width:auto}
+  .logo-x{font-size:13px;line-height:1;color:#ADB4AB;transform:translateY(-1px)}
+  .kicker{
+    font-size:10px;font-weight:750;letter-spacing:.2em;color:var(--muted);
+    margin-bottom:8px;text-transform:uppercase;
+  }
+  h1{
+    margin:0;font-size:clamp(25px,2.4vw,33px);line-height:1.14;
+    letter-spacing:-.035em;font-weight:760;
+  }
+  .hero-right{display:flex;flex-direction:column;align-items:flex-end;gap:14px;padding-top:3px;flex:0 0 auto}
+  .preview-chip{
+    display:inline-flex;align-items:center;gap:7px;padding:6px 11px;border-radius:999px;
+    border:1px solid #F2E3A9;background:var(--yellow-soft);color:#8A6500;
+    font-size:10.5px;font-weight:650;letter-spacing:.04em;white-space:nowrap;
+  }
+  .preview-chip i{width:5px;height:5px;border-radius:50%;background:#D6A600;box-shadow:0 0 0 3px rgba(214,166,0,.13)}
+  .asof{
+    display:flex;flex-direction:column;align-items:flex-end;gap:2px;
+    background:var(--paper);border:1px solid var(--line);border-radius:14px;
+    padding:12px 16px;box-shadow:0 8px 24px rgba(23,33,27,.04);
+  }
+  .asof span{font-size:10px;letter-spacing:.13em;color:var(--muted)}
+  .asof strong{font-size:20px;line-height:1.2;letter-spacing:-.015em;font-variant-numeric:tabular-nums}
+
+  .control-bar{
+    position:sticky;top:0;z-index:40;
+    background:rgba(245,244,239,.9);
+    border-bottom:1px solid rgba(232,228,217,.95);
+    -webkit-backdrop-filter:blur(15px);backdrop-filter:blur(15px);
+  }
+  .control-inner{
+    max-width:1480px;margin:0 auto;padding:10px 28px;
+    display:flex;align-items:center;justify-content:flex-start;gap:18px;
+  }
+  .period-group{display:flex;align-items:center;gap:8px;min-width:0}
+  .control-label{font-size:10.5px;letter-spacing:.11em;color:var(--muted);white-space:nowrap;margin-right:2px}
+  .period-btn{
+    height:36px;padding:0 14px;border-radius:999px;border:1px solid var(--line);
+    background:var(--paper);color:var(--ink-2);cursor:pointer;
+    display:inline-flex;align-items:center;gap:7px;
+    font-size:12.5px;font-weight:650;white-space:nowrap;
+    transition:background .18s,border-color .18s,color .18s,box-shadow .18s,transform .18s;
+  }
+  .period-btn .count{
+    font-size:10px;font-weight:650;line-height:1;padding:3px 5px;border-radius:5px;
+    background:#F1EFE8;color:#8B948B;font-variant-numeric:tabular-nums;
+  }
+  .period-btn:hover{border-color:#BFD9C8;color:var(--green-deep);transform:translateY(-1px)}
+  .period-btn.active{
+    background:var(--green);border-color:var(--green);color:#fff;
+    box-shadow:0 6px 16px rgba(14,138,74,.2);
+  }
+  .period-btn.active .count{background:rgba(255,255,255,.19);color:#fff}
+  .period-btn:focus-visible,.btn:focus-visible,.note-link:focus-visible,input:focus-visible,select:focus-visible{
+    outline:2px solid var(--green);outline-offset:2px;
+  }
+
+  .section{max-width:1480px;margin:0 auto;padding:30px 28px 0}
+  .section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:16px}
+  .eyebrow{
+    display:flex;align-items:center;gap:8px;margin-bottom:7px;
+    font-size:10px;font-weight:750;letter-spacing:.18em;color:var(--green);
+  }
+  .eyebrow span{background:var(--green-soft);color:var(--green-deep);border-radius:5px;padding:3px 6px;letter-spacing:.04em}
+  h2{margin:0 0 5px;font-size:24px;line-height:1.2;letter-spacing:-.025em;font-weight:750}
+  .section-head p{margin:0;font-size:12.5px;color:var(--muted)}
+  .section-note{
+    font-size:11px;color:var(--muted);background:rgba(255,255,255,.7);
+    border:1px solid var(--line);padding:7px 11px;border-radius:999px;white-space:nowrap;
+  }
+
+  .kpi-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-flow:dense;gap:14px}
+  .kpi{
+    position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;
+    min-height:116px;padding:16px 18px 14px;
+    background:var(--paper);border:1px solid var(--line);border-radius:16px;
+    transition:transform .2s,box-shadow .2s,border-color .2s;
+    animation:kpiIn .45s cubic-bezier(.2,.7,.2,1) both;
+  }
+  .kpi:hover{transform:translateY(-2px);box-shadow:var(--shadow);border-color:#DDD8CC}
+  .kpi .label{display:flex;align-items:center;gap:6px;font-size:12.5px;font-weight:550;color:var(--muted)}
+  .kpi .info{
+    display:inline-grid;place-items:center;width:13px;height:13px;border-radius:50%;
+    border:1px solid #C9D0C7;color:#9AA29A;font-size:8px;font-weight:750;line-height:1;cursor:help;
+  }
+  .kpi .value{
+    position:relative;display:flex;align-items:baseline;gap:2px;min-height:34px;
+    font-size:clamp(24px,2.15vw,32px);font-weight:760;line-height:1.05;
+    letter-spacing:-.04em;font-variant-numeric:tabular-nums;white-space:nowrap;
+  }
+  .kpi .cur{font-size:.56em;font-weight:700;color:var(--ink-2);letter-spacing:0;margin-right:1px}
+  .kpi .unit{font-size:11.5px;font-weight:600;color:var(--muted);letter-spacing:0;margin-left:4px}
+  .kpi .foot{display:flex;align-items:center;gap:7px;flex-wrap:wrap;min-height:19px;font-size:10.5px;color:var(--muted-2)}
+  .kpi-metric{display:inline-flex;align-items:center;gap:6px;justify-self:end;padding:5px 9px;border-radius:8px;background:var(--green-soft);border:1px solid #D5E7DB;color:var(--green-deep);font-size:10.5px;font-weight:650;letter-spacing:.02em}
+  .metric-kpi .value{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:10px;white-space:nowrap}
+  .kpi-metric b{font-size:14px;font-weight:800;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+  .kpi.wide{grid-column:span 2}
+  .trend-card{grid-column:1/-1}
+  .oms-split{display:grid;grid-template-columns:1fr 1fr;margin-top:6px}
+  .oms-part{min-width:0}
+  .oms-part + .oms-part{border-left:1px solid var(--line-soft);padding-left:18px}
+  .oms-part-label{font-size:10.5px;color:var(--muted);margin-bottom:3px}
+  .oms-part-value{display:flex;align-items:baseline;gap:2px;font-size:clamp(24px,2.1vw,30px);font-weight:760;line-height:1.05;letter-spacing:-.04em;font-variant-numeric:tabular-nums;white-space:nowrap}
+  .oms-part-value .unit{font-size:11.5px;font-weight:600;color:var(--muted);letter-spacing:0;margin-left:4px}
+  .oms-part-ton{font-size:10.5px;color:var(--muted-2);margin-top:3px;font-variant-numeric:tabular-nums}
+  .oms-foot{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:12px;border-top:1px solid var(--line-soft);padding-top:9px;font-size:10.5px;color:var(--muted-2);flex-wrap:wrap}
+  .oms-date{font-variant-numeric:tabular-nums}
+  .oms-deltas{display:flex;align-items:center;gap:10px;flex-wrap:wrap;color:var(--muted)}
+  .oms-deltas b{color:var(--green-deep);font-weight:750}
+
+  .fee-split{display:grid;grid-template-columns:1fr 1fr;margin-top:10px;border-top:1px solid var(--line-soft);padding-top:12px}
+  .fee-part{min-width:0}
+  .fee-part + .fee-part{border-left:1px solid var(--line-soft);padding-left:18px}
+  .fee-part-label{font-size:10.5px;color:var(--muted);margin-bottom:4px}
+  .fee-part-value{display:flex;align-items:baseline;gap:1px;font-size:clamp(22px,1.9vw,28px);font-weight:750;letter-spacing:-.03em;font-variant-numeric:tabular-nums;line-height:1.1;white-space:nowrap}
+  .fee-part-value .cur{font-size:.58em;font-weight:700;color:var(--ink-2);margin-right:1px}
+  .ratio-track{position:relative;height:5px;border-radius:999px;background:#F0EEE6;overflow:visible;margin-top:9px}
+  .ratio-track span{display:block;height:100%;border-radius:inherit;background:linear-gradient(90deg,var(--green),#58BC80);transition:width .55s cubic-bezier(.2,.7,.2,1)}
+  .foot-end{justify-content:flex-end}
+  .foot-between{justify-content:space-between}
+  .ratio-track .ratio-benchmark{position:absolute;top:-4px;bottom:-4px;width:2px;background:#D6A600;border-radius:2px;transform:translateX(-50%);pointer-events:none}
+  .ratio-benchmark-note{display:inline-flex;align-items:center;gap:5px;color:#8A6500;font-size:10px;white-space:nowrap}
+  .ratio-benchmark-note::before{content:'';width:8px;height:2px;border-radius:1px;background:#D6A600}
+  .ratio-note{font-size:10px;color:var(--muted-2);font-variant-numeric:tabular-nums;white-space:nowrap}
+
+  .charts{display:grid;grid-template-columns:1fr;gap:14px;margin-top:14px}
+  .card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius)}
+  .chart-card{padding:18px;min-height:160px;display:flex;flex-direction:column}
+  .chart-head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:12px}
+  .chart-title{font-size:14px;font-weight:700;letter-spacing:-.01em}
+  .chart-sub{font-size:10.5px;color:var(--muted);margin-top:3px}
+  .fee-legend{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-size:10.5px;color:var(--muted)}
+  .fee-legend i,.fee-detail i{display:inline-block;width:7px;height:7px;border-radius:2px;margin-right:4px;vertical-align:1px}
+  .fee-legend .k,.fee-detail .k{background:var(--green)}
+  .fee-legend .fs,.fee-detail .fs{background:var(--yellow)}
+  .fee-rows{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;margin:6px 0 2px}
+  .fee-row{opacity:.42;transition:opacity .25s}
+  .fee-row.active{opacity:1}
+  .fee-row-top{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin-bottom:8px;font-size:12px}
+  .fee-row-top .m{font-weight:700;letter-spacing:-.01em}
+  .fee-row-top .t{font-weight:750;font-variant-numeric:tabular-nums}
+  .fee-track{display:flex;height:27px;border-radius:8px;overflow:hidden;background:#F3F1EA}
+  .fee-seg{
+    display:flex;align-items:center;justify-content:flex-start;padding-left:8px;
+    font-size:10px;font-weight:750;white-space:nowrap;overflow:hidden;
+    transition:width .55s cubic-bezier(.2,.7,.2,1);
+  }
+  .fee-seg.k{background:linear-gradient(90deg,#0E8A4A,#129B56);color:#fff}
+  .fee-seg.fs{background:linear-gradient(90deg,#F5C400,#FFD84D);color:#5B4A00}
+  .fee-detail{display:flex;align-items:center;gap:14px;margin-top:7px;font-size:10.5px;color:var(--muted);font-variant-numeric:tabular-nums}
+
+  .detail-section{padding-bottom:0}
+  .table-card{margin-top:0;overflow:hidden;box-shadow:0 10px 30px rgba(23,33,27,.035)}
+  .table-toolbar{
+    display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;
+    padding:15px 18px;border-bottom:1px solid var(--line);background:rgba(255,255,255,.65);
+  }
+  .toolbar-left{display:flex;align-items:center;gap:8px;flex-wrap:wrap;min-width:0}
+  .search-box{position:relative}
+  .search-box svg{position:absolute;left:11px;top:50%;transform:translateY(-50%);color:#9AA29A;pointer-events:none}
+  .search-box input{
+    width:224px;height:38px;border:1px solid var(--line);border-radius:9px;
+    background:#FAFAF7;padding:0 12px 0 33px;color:var(--ink);font-size:12.5px;
+    transition:border-color .18s,background .18s,box-shadow .18s;
+  }
+  .search-box input::placeholder{color:#A8AFA6}
+  .search-box input:focus{border-color:#9FC9AE;background:#fff;box-shadow:0 0 0 3px rgba(14,138,74,.07);outline:none}
+  .select-wrap{position:relative}
+  .select-wrap:after{
+    content:"";position:absolute;right:13px;top:50%;width:0;height:0;pointer-events:none;
+    border-left:4px solid transparent;border-right:4px solid transparent;border-top:5px solid #8D968D;
+    transform:translateY(-30%);
+  }
+  .select-wrap select{
+    height:38px;border:1px solid var(--line);border-radius:9px;background:#FAFAF7;
+    padding:0 32px 0 12px;color:var(--ink-2);font-size:12.5px;cursor:pointer;appearance:none;
+    transition:border-color .18s,background .18s;
+  }
+  .select-wrap select:hover{border-color:#CFCBBF;background:#fff}
+  .select-wrap select:focus{border-color:#9FC9AE;outline:none;background:#fff}
+  .btn{
+    height:38px;display:inline-flex;align-items:center;justify-content:center;gap:6px;
+    padding:0 13px;border-radius:9px;border:1px solid var(--line);background:var(--paper);
+    color:var(--ink-2);font-size:12px;font-weight:600;cursor:pointer;white-space:nowrap;
+    transition:background .18s,border-color .18s,color .18s,transform .18s;
+  }
+  .btn:hover{border-color:#CFCBBF;background:#FAFAF7;transform:translateY(-1px)}
+  .btn-ghost{background:transparent;border-color:transparent;color:var(--muted)}
+  .btn-ghost:hover{background:#F3F1EA;border-color:transparent;color:var(--ink-2)}
+  .btn-dark{background:var(--ink);border-color:var(--ink);color:#fff}
+  .btn-dark:hover{background:#25332A;border-color:#25332A;color:#fff}
+  .toolbar-right{display:flex;align-items:center;gap:10px;margin-left:auto}
+  .result-count{font-size:11.5px;color:var(--muted);white-space:nowrap}
+  .result-count strong{color:var(--ink);font-weight:750}
+
+  .table-scroll{overflow:auto;scrollbar-width:thin;scrollbar-color:#CFCBBF transparent}
+  .table-scroll::-webkit-scrollbar{width:10px;height:10px}
+  .table-scroll::-webkit-scrollbar-thumb{background:#D8D4C8;border-radius:999px;border:2px solid #fff}
+  .table-scroll::-webkit-scrollbar-track{background:transparent}
+  table{width:100%;min-width:1360px;border-collapse:separate;border-spacing:0}
+  thead th{
+    position:sticky;top:0;z-index:3;background:#F4F6F1;color:#5C665E;
+    font-size:10.5px;font-weight:700;text-align:left;white-space:nowrap;
+    padding:11px 9px;border-bottom:1px solid var(--line);user-select:none;
+  }
+  thead th[data-sort]{cursor:pointer}
+  thead th[data-sort]:hover{color:var(--green-deep);background:#EEF4EE}
+  thead th.num{text-align:left}
+  .sort-ind{display:inline-block;margin-left:4px;font-size:8px;color:#B3BAB2;transform:translateY(-1px)}
+  thead th.sorted{color:var(--ink)}
+  thead th.sorted .sort-ind{color:var(--green)}
+  .sticky-col{position:sticky;left:0;z-index:2;background:#fff}
+  thead th.sticky-col{z-index:6;background:#F4F6F1}
+  .sticky-col:after{content:"";position:absolute;top:0;right:-9px;bottom:0;width:9px;pointer-events:none;background:linear-gradient(90deg,rgba(23,33,27,.045),transparent)}
+  tbody td{
+    padding:11px 9px;border-bottom:1px solid var(--line-soft);
+    font-size:11.5px;white-space:nowrap;vertical-align:middle;background:#fff;
+  }
+  tbody tr:hover td{background:#FAFBF8}
+  tbody tr:hover td.sticky-col{background:#FAFBF8}
+  tbody td.num{text-align:left;font-variant-numeric:tabular-nums}
+  .product-chip{
+    display:inline-flex;align-items:center;padding:4px 8px;border-radius:7px;
+    font-size:11px;font-weight:650;letter-spacing:-.01em;line-height:1.25;
+    background:var(--green-soft);color:var(--green-deep);
+  }
+  .product-chip.mango{background:var(--green-soft);color:var(--green-deep)}
+  .product-chip.bowl{background:#FFF6D8;color:#7A5A00}
+  .product-chip.combo{background:#F1F4F9;color:#3E5573}
+  .date{font-size:11.5px;color:var(--ink-2);font-variant-numeric:tabular-nums;letter-spacing:.01em}
+  .author{display:flex;align-items:center;gap:7px;min-width:0}
+  .avatar{
+    display:grid;place-items:center;width:23px;height:23px;flex:0 0 auto;border-radius:50%;
+    background:linear-gradient(135deg,#EAF5EE,#F7EEE9);color:var(--green-deep);
+    font-size:10px;font-weight:750;line-height:1;
+  }
+  .author-name{display:inline-block;max-width:130px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;vertical-align:middle;font-weight:550}
+  .note-link{
+    display:inline-flex;align-items:center;gap:4px;padding:4px 7px;border-radius:6px;
+    font-size:11px;font-weight:600;color:var(--green-deep);text-decoration:none;
+    background:transparent;transition:background .18s;
+  }
+  .note-link:hover{background:var(--green-soft)}
+  .money{font-variant-numeric:tabular-nums;font-weight:550}
+  .money .c{font-size:9px;color:#9AA29A;margin-right:1px}
+  .na{color:#B6BCB4}
+  .ratio{
+    display:inline-flex;align-items:center;justify-content:flex-start;min-width:50px;
+    padding:3px 6px;border-radius:6px;font-size:10.5px;font-weight:700;
+    font-variant-numeric:tabular-nums;
+  }
+  .ratio.high{background:var(--green-soft);color:var(--green-deep)}
+  .ratio.mid{background:#FFF6D8;color:#7A5A00}
+  .ratio.low{background:#F3F1EA;color:#7A827A}
+  tbody tr.total-row td{
+    background:#F4F6F1;border-bottom:1px solid var(--line);
+    font-weight:750;font-variant-numeric:tabular-nums;
+  }
+  tbody tr.total-row:hover td{background:#F4F6F1}
+  tbody tr.total-row td.sticky-col{background:#F4F6F1}
+  .empty-state{padding:54px 20px;text-align:center}
+  .empty-state .icon{
+    width:54px;height:54px;margin:0 auto 13px;border-radius:16px;
+    display:grid;place-items:center;background:#F3F1EA;color:#A9B0A8;
+  }
+  .empty-state p{margin:0 0 14px;font-size:12.5px;color:var(--muted)}
+  .table-note{padding:10px 18px;border-top:1px solid var(--line-soft);font-size:10.5px;color:#9AA29A;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+  .mobile-only{display:none}
+
+
+  .sales-section{padding-bottom:0}
+  .subhead{display:flex;align-items:center;gap:10px;margin:4px 0 12px;flex-wrap:wrap}
+  .subhead-tag{display:inline-flex;align-items:center;background:var(--green-soft);color:var(--green-deep);font-size:10px;font-weight:750;letter-spacing:.08em;padding:5px 8px;border-radius:6px}
+  .subhead h3{margin:0;font-size:15px;font-weight:750;letter-spacing:-.01em}
+  .subhead-desc{font-size:11px;color:var(--muted)}
+  .pos-subhead{margin-top:28px}
+  .sales-kpi-grid{margin-bottom:14px}
+  .kpi.lift{background:linear-gradient(135deg,#F3FAF5,#FBFDF9);border-color:#D8EBDD}
+  .kpi.lift .label{color:var(--green-deep)}
+  .kpi.lift .value{color:var(--green-deep)}
+  .sales-row{display:grid;grid-template-columns:.9fr 1.4fr;gap:14px}
+  .pos-row{align-items:stretch}
+  .sales-card{padding:18px;display:flex;flex-direction:column;min-width:0}
+  .sales-card-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:14px}
+  .sales-card-head h3{margin:0;font-size:14px;font-weight:750;letter-spacing:-.01em}
+  .sales-card-head p{margin:3px 0 0;font-size:10.5px;color:var(--muted)}
+  .sales-chip{font-size:10.5px;font-weight:750;color:var(--green-deep);background:var(--green-soft);padding:5px 8px;border-radius:6px;white-space:nowrap}
+  #pickupCompare{display:flex;flex-direction:column;justify-content:space-between;flex:1}
+  .compare-row{display:flex;flex-direction:column;flex:0 0 auto;padding:10px 0}
+  #pickupCompare .compare-row:first-child{padding-top:0}
+  #pickupCompare .compare-row:first-child .compare-top{align-items:flex-start}
+  .compare-row + .compare-row{border-top:1px solid var(--line-soft)}
+  .compare-top{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin-bottom:7px}
+  .compare-label{font-size:12px;font-weight:700}
+  .compare-total{font-size:20px;font-weight:750;font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+  .compare-total small{font-size:10px;font-weight:600;color:var(--muted);margin-left:3px}
+  .compare-track{height:22px;border-radius:7px;background:#F1EFE8;overflow:hidden}
+  .compare-fill{display:block;height:100%;border-radius:inherit;background:linear-gradient(90deg,#CBE4D5,#9CCFB0);transition:width .5s}
+  .compare-fill.during{background:linear-gradient(90deg,#0E8A4A,#3AAA6D)}
+  .compare-meta{display:flex;gap:12px;flex-wrap:wrap;margin-top:6px;font-size:10.5px;color:var(--muted);font-variant-numeric:tabular-nums}
+  .compare-summary{margin-top:auto;padding-top:14px;border-top:1px solid var(--line-soft);font-size:11px;line-height:1.7;color:var(--ink-2)}
+  .compare-summary b{color:var(--green-deep)}
+  .trend-card{overflow:hidden}
+  .trend-legend{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-size:10px;color:var(--muted)}
+  .trend-legend i{display:inline-block;width:8px;height:8px;margin-right:4px;vertical-align:0}
+  .trend-legend .line{width:14px;height:2px;border-radius:1px;background:var(--green)}
+  .trend-legend .line.alt{background:#5B7FA6}
+  .trend-legend .dash{width:14px;height:0;border-top:1px dashed #8FA99A;border-radius:0;background:none}
+  .trend-chart{position:relative;padding:0 42px;min-width:0}
+  .trend-plot{position:relative;height:220px;border-left:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .trend-axis-left,.trend-axis-right{position:absolute;top:0;height:220px;display:flex;flex-direction:column;justify-content:space-between;font-size:9px;color:var(--muted-2);font-variant-numeric:tabular-nums;pointer-events:none}
+  .trend-axis-left{left:0;width:36px;align-items:flex-end;text-align:right}
+  .trend-axis-right{right:0;width:36px;align-items:flex-start;text-align:left}
+  .trend-band{position:absolute;top:0;bottom:0;pointer-events:none}
+  .trend-band.pre{background:rgba(14,138,74,.045)}
+  .trend-band.during{background:rgba(245,196,0,.09)}
+  .trend-grid{position:absolute;inset:0;pointer-events:none}
+  .trend-grid i{position:absolute;left:0;right:0;border-top:1px dashed #F0EEE6}
+  .trend-daily{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none}
+  .trend-daily .area{fill:rgba(14,138,74,.07)}
+  .trend-daily .line{fill:none;stroke:var(--green);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke}
+  .trend-daily .exposure{fill:none;stroke:#5B7FA6;stroke-width:1.1;stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke;opacity:.95}
+  .trend-peak{position:absolute;width:10px;height:10px;margin:-5px 0 0 -5px;border-radius:50%;border:2px solid #fff;box-shadow:0 1px 4px rgba(23,33,27,.28);z-index:5;pointer-events:none}
+  .trend-peak.daily{background:var(--green)}
+  .trend-peak.yogurt{background:#5B7FA6}
+  .trend-avg{position:absolute;left:0;border-top:1px dashed rgba(14,138,74,.35);pointer-events:none}
+  .trend-avg span{position:absolute;left:6px;top:-14px;padding:0 3px;border-radius:3px;background:rgba(255,255,255,.8);font-size:9px;color:var(--green-deep);white-space:nowrap}
+  .trend-avg.during{border-top-color:rgba(214,166,0,.55)}
+  .trend-avg.during span{color:#8A6500}
+  .trend-start{position:absolute;top:0;bottom:0;border-left:1px dashed #C9A227;pointer-events:none}
+  .trend-start span{position:absolute;top:-1px;left:5px;padding:1px 4px;border-radius:3px;background:var(--yellow-soft);font-size:9px;color:#8A6500;white-space:nowrap}
+  .trend-x-axis{position:relative;height:14px;margin:6px 42px 0;font-size:9.5px;color:var(--muted-2)}
+  .trend-x-axis span{position:absolute;transform:translateX(-50%);white-space:nowrap}
+  .trend-x-axis span:first-child{transform:none}
+  .trend-x-axis span:last-child{transform:translateX(-100%)}
+  .trend-hover{position:absolute;inset:0;cursor:crosshair}
+  .trend-tooltip{position:absolute;top:8px;z-index:5;padding:6px 8px;border-radius:7px;background:var(--ink);color:#fff;font-size:10px;line-height:1.55;white-space:nowrap;opacity:0;transform:translate(-50%,0);transition:opacity .12s;pointer-events:none;box-shadow:0 6px 16px rgba(0,0,0,.15)}
+  .trend-tooltip.show{opacity:1}
+  .trend-tooltip b{font-weight:750}
+  .pos-legend{display:flex;align-items:center;gap:9px;flex-wrap:wrap;font-size:10px;color:var(--muted)}
+  .pos-legend span{display:inline-flex;align-items:center;gap:4px;white-space:nowrap}
+  .pos-legend i{display:inline-block;width:7px;height:7px;border-radius:2px}
+  #posTrend{margin-top:8px;border-top:1px solid var(--line-soft);padding-top:8px}
+  #posTrend svg{display:block;width:100%;height:auto}
+  .pos-chart{width:100%}
+  .pos-chart svg{display:block;width:100%;height:auto}
+  .pos-chart svg text{font-family:inherit;font-variant-numeric:tabular-nums}
+  #posTable{display:flex;flex-direction:column;flex:1}
+  .pos-table-wrap{flex:1;display:flex;flex-direction:column}
+  .pos-table{height:100%}
+  .pos-row .sales-card{height:100%}
+  .pos-table-wrap{overflow-x:auto}
+  .pos-table{width:100%;min-width:0;border-collapse:collapse;font-size:11.5px}
+  .pos-table th{padding:8px 8px 9px;border-bottom:1px solid var(--line);color:#5C665E;font-size:10.5px;font-weight:700;text-align:left;white-space:nowrap}
+  .pos-table td{padding:9px 8px;border-bottom:1px solid var(--line-soft);text-align:left;white-space:nowrap;font-variant-numeric:tabular-nums}
+  .pos-table tr:last-child td{border-bottom:none}
+  .pos-table .prod{display:inline-flex;align-items:center;gap:6px;font-weight:600}
+  .pos-table .dot{width:7px;height:7px;border-radius:2px;display:inline-block}
+  .pos-table .total-row td{padding-top:11px;border-top:1px solid var(--line);font-weight:750;background:#F7F8F4}
+  .pos-share{display:inline-flex;align-items:center;padding:2px 6px;border-radius:5px;background:#F3F1EA;color:var(--ink-2);font-size:10.5px;font-weight:650}
+  .pos-insight{margin-top:14px;padding:10px 12px;border-left:2px solid var(--green);border-radius:0 8px 8px 0;background:#F6FAF7;font-size:10.5px;line-height:1.7;color:var(--ink-2)}
+  .pos-insight b{color:var(--green-deep)}
+  .pos-insight div + div{margin-top:6px}
+  .sales-note{display:flex;flex-direction:column;gap:2px;margin-top:14px;font-size:10.5px;line-height:1.7;color:var(--muted-2)}
+
+
+  .editor-section{padding-bottom:44px}
+  .editor-card{padding:20px}
+  .editor-head{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:14px}
+  .editor-head h2{margin:0 0 4px;font-size:20px;letter-spacing:-.02em}
+  .editor-head p{margin:0;font-size:11.5px;color:var(--muted)}
+  .admin-entry{height:34px;padding:0 12px;border-radius:999px;border:1px solid var(--line);background:#fff;color:var(--ink-2);font-size:11.5px;font-weight:650;cursor:pointer;white-space:nowrap;transition:border-color .18s,color .18s,background .18s}
+  .admin-entry:hover{border-color:#BFD9C8;color:var(--green-deep)}
+  .admin-entry.active{background:var(--green-soft);border-color:#BFD9C8;color:var(--green-deep)}
+  .admin-text{width:100%;min-height:140px;border:1px solid var(--line);border-radius:10px;background:#FAFAF7;padding:14px 16px;font:inherit;font-size:13px;line-height:1.85;color:var(--ink);resize:vertical;outline:none;transition:background .18s,border-color .18s,box-shadow .18s}
+  .admin-text[readonly]{cursor:default;color:var(--ink-2)}
+  .admin-text.editing{background:#fff;border-color:#9FC9AE;box-shadow:0 0 0 3px rgba(14,138,74,.07)}
+  .editor-actions{display:flex;align-items:center;gap:8px;margin-top:12px;flex-wrap:wrap}
+  .editor-actions[hidden]{display:none}
+  .editor-status{font-size:10.5px;color:var(--muted)}
+  .note-meta{margin-top:8px;font-size:10.5px;color:var(--muted-2);letter-spacing:.02em}
+  .modal-backdrop{position:fixed;inset:0;z-index:100;background:rgba(23,33,27,.35);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);display:flex;align-items:center;justify-content:center;padding:20px}
+  .modal-backdrop[hidden]{display:none}
+  .modal{width:min(360px,100%);background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px;box-shadow:0 24px 60px rgba(23,33,27,.2)}
+  .modal h3{margin:0 0 6px;font-size:17px;letter-spacing:-.01em}
+  .modal p{margin:0 0 12px;font-size:12px;color:var(--muted)}
+  .modal input{width:100%;height:42px;border:1px solid var(--line);border-radius:9px;padding:0 12px;font-size:14px;background:#FAFAF7;transition:border-color .18s,background .18s,box-shadow .18s}
+  .modal input:focus{border-color:#9FC9AE;background:#fff;box-shadow:0 0 0 3px rgba(14,138,74,.07);outline:none}
+  .modal-error{min-height:16px;margin:6px 0 0;font-size:11px;color:var(--red)}
+  .modal-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:10px}
+
+  .site-footer{
+    max-width:1480px;margin:36px auto 0;padding:22px 28px 42px;
+    border-top:1px solid var(--line);color:#8A928A;font-size:11px;line-height:1.85;
+  }
+  .footer-row{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;margin-bottom:8px}
+  .footer-row b{color:var(--ink-2);font-weight:650}
+  .footer-notes{display:flex;flex-direction:column;gap:2px;max-width:1100px}
+  .footer-notes span{display:block}
+
+  @keyframes kpiIn{from{opacity:0;transform:translateY(9px)}to{opacity:1;transform:translateY(0)}}
+
+  @media (max-width:980px){
+    .kpi-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .kpi.wide{grid-column:span 2}
+  .trend-card{grid-column:1/-1}
+  .oms-kpi{justify-content:flex-start}
+  .oms-kpi .kpi-date{margin-top:7px}
+  .oms-kpi .kpi-ton{margin-top:4px}
+  .kpi-ton{font-size:10.5px;color:var(--muted);font-variant-numeric:tabular-nums;letter-spacing:.01em}
+  .kpi-date{font-size:10px;color:var(--muted-2);font-variant-numeric:tabular-nums}
+    .hero{padding-top:24px}
+  }
+  @media (max-width:760px){
+    .hero{flex-direction:column;gap:18px;padding:23px 18px 18px}
+    .hero-right{flex-direction:row;align-items:center;gap:10px;width:100%;justify-content:flex-end}
+    .asof{align-items:flex-start;padding:9px 13px}
+    .asof strong{font-size:17px}
+    .logos{margin-bottom:17px}
+    .logos img{height:25px}
+    .control-inner{padding:9px 18px;gap:10px}
+    .control-label{display:none}
+    .period-group{overflow-x:auto;padding-bottom:1px;scrollbar-width:none}
+    .period-group::-webkit-scrollbar{display:none}
+    .section{padding:25px 18px 0}
+    .section-head{align-items:flex-start;flex-direction:column;gap:10px}
+    .section-head .period-group{align-self:flex-end}
+    .section-note{align-self:flex-start}
+    .fee-rows{grid-template-columns:1fr;gap:21px}
+    .table-toolbar{padding:13px 14px}
+    .toolbar-left{width:100%}
+    .search-box{flex:1}
+    .search-box input{width:100%}
+    .toolbar-right{width:100%;justify-content:space-between;margin-left:0}
+    .mobile-only{display:inline}
+    .footer-row{flex-direction:column;gap:3px}
+  }
+  @media (max-width:560px){
+    .kpi-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .kpi.wide{grid-column:span 2}
+  .trend-card{grid-column:1/-1}
+  .oms-kpi{justify-content:flex-start}
+  .oms-kpi .kpi-date{margin-top:7px}
+  .oms-kpi .kpi-ton{margin-top:4px}
+  .kpi-ton{font-size:10.5px;color:var(--muted);font-variant-numeric:tabular-nums;letter-spacing:.01em}
+  .kpi-date{font-size:10px;color:var(--muted-2);font-variant-numeric:tabular-nums}
+    .kpi{min-height:104px;padding:14px 14px 12px}
+    .kpi .value{font-size:24px}
+    .search-box input{font-size:11.5px}
+    h1{font-size:25px}
+    .section-note{display:none}
+    .chart-card{min-height:0;padding:16px}
+    .chart-head{margin-bottom:13px}
+  }
+  @media (max-width:380px){
+    .kpi-grid{grid-template-columns:1fr}
+    .kpi.wide{grid-column:span 1}
+  }
+  @media (max-width: 640px){
+    .kpi.metric-kpi{grid-column:1/-1}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *,*::before,*::after{animation-duration:.001ms !important;animation-iteration-count:1 !important;transition-duration:.001ms !important;scroll-behavior:auto !important}
+  }
+
+  @media (max-width:980px){
+    .sales-row{grid-template-columns:1fr}
+  }
+  @media (max-width:760px){
+    .sales-kpi-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .trend-chart{padding:0 32px}
+    .trend-x-axis{margin-left:32px;margin-right:32px}
+    .trend-plot,.trend-axis-left,.trend-axis-right{height:190px}
+    .trend-axis-left,.trend-axis-right{width:28px;font-size:8px}
+    .sales-card{padding:16px}
+    .pos-table{font-size:11px}
+    .pos-table th,.pos-table td{padding:7px 6px}
+  }
+  @media (max-width:560px){
+    .sales-kpi-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .compare-total{font-size:18px}
+    .trend-chart{padding:0 26px}
+    .trend-x-axis{margin-left:26px;margin-right:26px;font-size:8.5px}
+    .trend-axis-left,.trend-axis-right{width:22px;font-size:7.5px}
+    .trend-x-axis span:nth-child(4){display:none}
+  }
+  @media (max-width:380px){
+    .sales-kpi-grid{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+<div class="topline"></div>
+
+<header class="hero">
+  <div class="hero-left">
+    <div class="logos">
+      <img src="data:image/png;base64,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" alt="切果NOW">
+      <span class="logo-x">×</span>
+      <img src="data:image/png;base64,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" alt="乐纯 lepur">
+    </div>
+    <div class="kicker">Social Content Dashboard</div>
+    <h1>Y26M8M9小红书投放数据看板</h1>
+  </div>
+  <div class="hero-right">
+    <div class="asof">
+      <span>数据截至</span>
+      <strong>2026.10.18</strong>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="section" id="overview" aria-labelledby="overviewTitle">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow"><span>01</span>OVERVIEW</div>
+        <h2 id="overviewTitle">数据总览</h2>
+      </div>
+      <div class="period-group" data-period-group role="group" aria-label="选择总览月份">
+        <button class="period-btn active" type="button" data-month="all" aria-pressed="true">全部<span class="count">22</span></button>
+        <button class="period-btn" type="button" data-month="m8" aria-pressed="false">8月<span class="count">11</span></button>
+        <button class="period-btn" type="button" data-month="m9" aria-pressed="false">9月<span class="count">11</span></button>
+      </div>
+    </div>
+
+    <div class="kpi-grid" id="kpiGrid"></div>
+
+    <div class="charts">
+      <article class="card chart-card">
+        <div class="chart-head">
+          <div>
+            <div class="chart-title">费用结构</div>
+          </div>
+          <div class="fee-legend">
+            <span><i class="k"></i>K费用</span>
+            <span><i class="fs"></i>FS费用</span>
+          </div>
+        </div>
+        <div class="fee-rows" id="feeRows"></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section detail-section" id="detail" aria-labelledby="detailTitle">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow"><span>02</span>NOTES</div>
+        <h2 id="detailTitle">笔记明细</h2>
+      </div>
+      <div class="period-group" data-period-group role="group" aria-label="选择明细月份">
+        <button class="period-btn active" type="button" data-month="all" aria-pressed="true">全部<span class="count">22</span></button>
+        <button class="period-btn" type="button" data-month="m8" aria-pressed="false">8月<span class="count">11</span></button>
+        <button class="period-btn" type="button" data-month="m9" aria-pressed="false">9月<span class="count">11</span></button>
+      </div>
+    </div>
+
+    <div class="card table-card">
+      <div class="table-scroll">
+        <table id="detailTable">
+          <thead>
+            <tr>
+              <th class="sticky-col">提及产品</th>
+              <th data-sort="date">发布时间<span class="sort-ind">↕</span></th>
+              <th data-sort="author">博主名称<span class="sort-ind">↕</span></th>
+              <th>内容链接</th>
+              <th class="num" data-sort="k">K费用<span class="sort-ind">↕</span></th>
+              <th class="num" data-sort="fs">FS费用<span class="sort-ind">↕</span></th>
+              <th class="num" data-sort="exp">曝光<span class="sort-ind">↕</span></th>
+              <th class="num" data-sort="read">阅读<span class="sort-ind">↕</span></th>
+              <th class="num" data-sort="likes">点赞<span class="sort-ind">↕</span></th>
+              <th class="num" data-sort="favs">收藏<span class="sort-ind">↕</span></th>
+              <th class="num" data-sort="comments">评论<span class="sort-ind">↕</span></th>
+              <th class="num" data-sort="seed">新增种草人群<span class="sort-ind">↕</span></th>
+              <th class="num" data-sort="deep">新增深度种草人群<span class="sort-ind">↕</span></th>
+              <th class="num" data-sort="iti">I+TI综合成本<span class="sort-ind">↕</span></th>
+              <th class="num" data-sort="ti">TI成本<span class="sort-ind">↕</span></th>
+              <th class="num" data-sort="tiShare">TI占比<span class="sort-ind">↕</span></th>
+            </tr>
+          </thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
+      <div class="table-note">
+        <span>数据来源：切果NOW单独看板数据源.xlsx</span>
+        <span class="mobile-only">左右滑动查看全部字段</span>
+        <span>缺失指标以“—”展示</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section sales-section" id="sales" aria-labelledby="salesTitle">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow"><span>03</span>SALES LIFT</div>
+        <h2 id="salesTitle">投放期间销售拉升</h2>
+      </div>
+      <div class="section-note">OMS 07.07–10.05 · POS 7–9月</div>
+    </div>
+
+    <div class="subhead">
+      <span class="subhead-tag">内部数据</span>
+      <h3>OMS 提货</h3>
+    </div>
+
+    <div class="kpi-grid sales-kpi-grid" id="salesKpiGrid"></div>
+
+    <div class="sales-row">
+      <article class="card sales-card trend-card">
+        <div class="sales-card-head">
+          <div>
+            <h3>投放前后每日提货与酸奶膏曝光趋势</h3>
+          </div>
+          <div class="trend-legend">
+            <span><i class="line"></i>每日提货量</span>
+            <span title="按自身峰值归一化，仅看走势"><i class="line alt"></i>酸奶膏曝光趋势</span>
+            <span><i class="dash"></i>周期日均</span>
+          </div>
+        </div>
+        <div id="pickupTrend"></div>
+      </article>
+    </div>
+
+    <div class="subhead pos-subhead">
+      <span class="subhead-tag">前台数据</span>
+      <h3>门店POS前台销售</h3>
+    </div>
+
+    <div class="kpi-grid sales-kpi-grid" id="posKpiGrid"></div>
+
+    <div class="sales-row pos-row">
+      <article class="card sales-card">
+        <div class="sales-card-head">
+          <div>
+            <h3>月度销售与产品结构</h3>
+          </div>
+          <div class="pos-legend" id="posLegend"></div>
+        </div>
+        <div id="posChart"></div>
+        <div id="posTrend"></div>
+      </article>
+
+      <article class="card sales-card">
+        <div class="sales-card-head">
+          <div>
+            <h3>产品线月度明细</h3>
+          </div>
+        </div>
+        <div id="posTable"></div>
+      </article>
+    </div>
+
+  </section>
+
+  <section class="section editor-section" id="editor" aria-labelledby="editorTitle">
+    <div class="card editor-card">
+      <div class="editor-head">
+        <div>
+          <div class="eyebrow"><span>04</span>NOTES</div>
+          <h2 id="editorTitle">补充说明</h2>
+          <p>所有人可见 · 管理员可编辑</p>
+        </div>
+        <button class="admin-entry" type="button" id="adminEntryBtn">管理员登录</button>
+      </div>
+      <textarea id="adminText" class="admin-text" readonly placeholder="管理员登录后可编辑；保存后所有访客都能看到…"></textarea>
+      <div class="note-meta" id="noteMeta">正在加载共享说明…</div>
+      <div class="editor-actions" id="editorActions" hidden>
+        <button class="btn btn-dark" type="button" id="saveTextBtn">保存</button>
+        <button class="btn" type="button" id="cancelTextBtn">取消</button>
+        <button class="btn btn-ghost" type="button" id="logoutBtn">退出管理员</button>
+        <span class="editor-status" id="editorStatus"></span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="modal-backdrop" id="adminModal" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="adminModalTitle">
+    <h3 id="adminModalTitle">管理员登录</h3>
+    <p>请输入管理员密码</p>
+    <input type="password" id="adminPassword" placeholder="管理员密码" autocomplete="current-password">
+    <div class="modal-error" id="adminError"></div>
+    <div class="modal-actions">
+      <button class="btn" type="button" id="adminCancel">取消</button>
+      <button class="btn btn-dark" type="button" id="adminConfirm">登录</button>
+    </div>
+  </div>
+</div>
+
+
+
+
+<script id="dashboard-data" type="application/json">{
+  "asOf": "2026-10-18",
+  "benchmark": {
+    "tiShare": 0.51
+  },
+  "overview": {
+    "m8": {
+      "label": "8月",
+      "notes": 11,
+      "k": 6961.0,
+      "fs": 1945.0,
+      "exp": 452378,
+      "read": 80696,
+      "inter": 3811,
+      "seed": 6621,
+      "deep": 2591,
+      "iti": 0.2938,
+      "ti": 0.7507,
+      "tiShare": 0.3913,
+      "cpm": 19.7,
+      "cpe": 2.3
+    },
+    "m9": {
+      "label": "9月",
+      "notes": 11,
+      "k": 9440.0,
+      "fs": 4513.0,
+      "exp": 422165,
+      "read": 147318,
+      "inter": 1904,
+      "seed": 35015,
+      "deep": 11975,
+      "iti": 0.1289,
+      "ti": 0.3769,
+      "tiShare": 0.342,
+      "cpm": 33,
+      "cpe": 7.3
+    },
+    "all": {
+      "label": "TTL",
+      "notes": 22,
+      "k": 16401.0,
+      "fs": 6458.0,
+      "exp": 874543,
+      "read": 228014,
+      "inter": 5715,
+      "seed": 41636,
+      "deep": 14566,
+      "iti": 0.1551,
+      "ti": 0.4434,
+      "tiShare": 0.3498,
+      "cpm": 26.1,
+      "cpe": 4
+    }
+  },
+  "notes": [
+    {
+      "id": "n01",
+      "product": "芒果船+酸奶膏",
+      "productRaw": "芒果船+酸奶膏",
+      "date": "2026-09-30",
+      "month": 9,
+      "monthLabel": "9月",
+      "author": "尧尧尧yao",
+      "link": "https://www.xiaohongshu.com/explore/6abcb07b0000000014033738?xsec_token=MBUUpKQn_C1DgHWnBnxVDBu3lQ4CCo46obIiqGWv5LFBw=&xsec_source=pc_pgyexport",
+      "k": 550.0,
+      "fs": null,
+      "exp": 28911,
+      "read": 8867,
+      "likes": 157,
+      "favs": 13,
+      "comments": 31,
+      "seed": null,
+      "deep": null,
+      "iti": null,
+      "ti": null,
+      "tiShare": null
+    },
+    {
+      "id": "n02",
+      "product": "芒果船+酸奶碗",
+      "productRaw": "芒果船+酸奶碗",
+      "date": "2026-09-26",
+      "month": 9,
+      "monthLabel": "9月",
+      "author": "千承影",
+      "link": "https://www.xiaohongshu.com/explore/6ab787fc000000001a02bc31?xsec_token=MBtKEHnOk-3BkPmRztAPikEQ9G0YjyOGbDOknZC5S1Lrs=&xsec_source=pc_pgyexport",
+      "k": 550.0,
+      "fs": 1.0,
+      "exp": 29569,
+      "read": 3386,
+      "likes": 113,
+      "favs": 22,
+      "comments": 10,
+      "seed": 11,
+      "deep": 3,
+      "iti": 0.0909,
+      "ti": 0.3333,
+      "tiShare": 0.2727
+    },
+    {
+      "id": "n06",
+      "product": "芒果船",
+      "productRaw": "芒果船",
+      "date": "2026-09-24",
+      "month": 9,
+      "monthLabel": "9月",
+      "author": "YY",
+      "link": "https://www.xiaohongshu.com/explore/6ab39388000000001c00e721?xsec_token=MBo4uyrpgbJSLRXRFJWnFhdUDcthO_sj1Bwm4nEiuga4M=&xsec_source=pc_pgyexport",
+      "k": 220.0,
+      "fs": 2138.0,
+      "exp": 76102,
+      "read": 19600,
+      "likes": 76,
+      "favs": 11,
+      "comments": 16,
+      "seed": 8264,
+      "deep": 7354,
+      "iti": 0.2587,
+      "ti": 0.2907,
+      "tiShare": 0.8899
+    },
+    {
+      "id": "n05",
+      "product": "芒果船+酸奶膏",
+      "productRaw": "芒果船+酸奶膏",
+      "date": "2026-09-24",
+      "month": 9,
+      "monthLabel": "9月",
+      "author": "一两句",
+      "link": "https://www.xiaohongshu.com/explore/6ab49af1000000001b023618?xsec_token=MBU5zNXb1TMS4XDGd-6DcrLg02xU2lQb7kpTvhcvjJcbc=&xsec_source=pc_pgyexport",
+      "k": 570.0,
+      "fs": 48.0,
+      "exp": 7944,
+      "read": 2519,
+      "likes": 62,
+      "favs": 15,
+      "comments": 4,
+      "seed": 163,
+      "deep": 10,
+      "iti": 0.2945,
+      "ti": 4.8,
+      "tiShare": 0.0613
+    },
+    {
+      "id": "n04",
+      "product": "芒果船+酸奶膏",
+      "productRaw": "芒果船+酸奶膏",
+      "date": "2026-09-24",
+      "month": 9,
+      "monthLabel": "9月",
+      "author": "玉米咕咕_",
+      "link": "https://www.xiaohongshu.com/explore/6ab4fab4000000001500d558?xsec_token=MBU5zNXb1TMS4XDGd-6DcrLkoIyP-mbsg9VQ8FFPGlFj4=&xsec_source=pc_pgyexport",
+      "k": 800.0,
+      "fs": 9.0,
+      "exp": 9504,
+      "read": 2355,
+      "likes": 113,
+      "favs": 14,
+      "comments": 2,
+      "seed": 309,
+      "deep": 6,
+      "iti": 0.0291,
+      "ti": 1.5,
+      "tiShare": 0.0194
+    },
+    {
+      "id": "n03",
+      "product": "芒果船+酸奶碗",
+      "productRaw": "芒果船+酸奶碗",
+      "date": "2026-09-24",
+      "month": 9,
+      "monthLabel": "9月",
+      "author": "静脉爱糖醋",
+      "link": "https://www.xiaohongshu.com/explore/6ab4e958000000001a021f1d?xsec_token=MBU5zNXb1TMS4XDGd-6DcrLpAhR-Fty8pIdAlOjCV4ggo=&xsec_source=pc_pgyexport",
+      "k": 1690.0,
+      "fs": 123.0,
+      "exp": 32614,
+      "read": 12989,
+      "likes": 231,
+      "favs": 23,
+      "comments": 9,
+      "seed": 2234,
+      "deep": 640,
+      "iti": 0.0551,
+      "ti": 0.1922,
+      "tiShare": 0.2865
+    },
+    {
+      "id": "n07",
+      "product": "芒果船+酸奶膏",
+      "productRaw": "芒果船+酸奶膏",
+      "date": "2026-09-23",
+      "month": 9,
+      "monthLabel": "9月",
+      "author": "键盘手vivi",
+      "link": "https://www.xiaohongshu.com/explore/6ab22f41000000003400102d?xsec_token=MB-WA_Hq6FCSaQ7Qy6C68eDw677_V-I1EaqK4Gv_qx14k=&xsec_source=pc_pgyexport",
+      "k": 660.0,
+      "fs": 229.0,
+      "exp": 15351,
+      "read": 8893,
+      "likes": 75,
+      "favs": 5,
+      "comments": 20,
+      "seed": 2789,
+      "deep": 405,
+      "iti": 0.0821,
+      "ti": 0.5654,
+      "tiShare": 0.1452
+    },
+    {
+      "id": "n08",
+      "product": "芒果船",
+      "productRaw": "芒果船",
+      "date": "2026-09-22",
+      "month": 9,
+      "monthLabel": "9月",
+      "author": "木木",
+      "link": "https://www.xiaohongshu.com/explore/6ab228c7000000003102405f?xsec_token=MB-WA_Hq6FCSaQ7Qy6C68eD3UFcj0oFReZMYSdcOllbkk=&xsec_source=pc_pgyexport",
+      "k": 850.0,
+      "fs": 1186.0,
+      "exp": 39526,
+      "read": 29328,
+      "likes": 162,
+      "favs": 13,
+      "comments": 17,
+      "seed": 11791,
+      "deep": 2523,
+      "iti": 0.1006,
+      "ti": 0.4701,
+      "tiShare": 0.214
+    },
+    {
+      "id": "n09",
+      "product": "芒果船+酸奶膏+酸奶碗",
+      "productRaw": "芒果船+酸奶膏+酸奶碗",
+      "date": "2026-09-21",
+      "month": 9,
+      "monthLabel": "9月",
+      "author": "西柚熊一只",
+      "link": "https://www.xiaohongshu.com/explore/6ab0f91d0000000035023a78?xsec_token=MBPtMZF4GhotkbbvcuTQLAmjK6HEjXh_ZaxgQEQxXDBiY=&xsec_source=pc_pgyexport",
+      "k": 880.0,
+      "fs": 32.0,
+      "exp": 116496,
+      "read": 29388,
+      "likes": 120,
+      "favs": 14,
+      "comments": 8,
+      "seed": 317,
+      "deep": 106,
+      "iti": 0.1009,
+      "ti": 0.3019,
+      "tiShare": 0.3344
+    },
+    {
+      "id": "n10",
+      "product": "芒果船+酸奶膏",
+      "productRaw": "芒果船+酸奶膏",
+      "date": "2026-09-20",
+      "month": 9,
+      "monthLabel": "9月",
+      "author": "吴嘻嘻",
+      "link": "https://www.xiaohongshu.com/explore/6aaf430b0000000029014bf3?xsec_token=MBfdRuNrYK8LqBW3hNoKGbe3krqqvKIKgvuvHws3knr3M=&xsec_source=pc_pgyexport",
+      "k": 1980.0,
+      "fs": 95.0,
+      "exp": 39549,
+      "read": 6148,
+      "likes": 322,
+      "favs": 80,
+      "comments": 24,
+      "seed": 412,
+      "deep": 233,
+      "iti": 0.2306,
+      "ti": 0.4077,
+      "tiShare": 0.5655
+    },
+    {
+      "id": "n11",
+      "product": "芒果船+酸奶碗",
+      "productRaw": "芒果船+酸奶碗",
+      "date": "2026-09-07",
+      "month": 9,
+      "monthLabel": "9月",
+      "author": "辣椒炒木鱼",
+      "link": "https://www.xiaohongshu.com/explore/6a9e9027000000002802dbed?xsec_token=MBmtBu_Qc4sD0nF6ydCVsMjQXQKL4ET7sLzT21_VXwAok=&xsec_source=pc_pgyexport",
+      "k": 690.0,
+      "fs": 652.0,
+      "exp": 26599,
+      "read": 23845,
+      "likes": 105,
+      "favs": 14,
+      "comments": 3,
+      "seed": 8725,
+      "deep": 695,
+      "iti": 0.0747,
+      "ti": 0.9381,
+      "tiShare": 0.0797
+    },
+    {
+      "id": "n13",
+      "product": "酸奶碗+芒果船",
+      "productRaw": "酸奶碗+芒果船",
+      "date": "2026-08-31",
+      "month": 8,
+      "monthLabel": "8月",
+      "author": "狂野甜甜圈🍩",
+      "link": "https://www.xiaohongshu.com/explore/6a95668a0000000020033838?xsec_token=MBdufUlYl_trRCTCA629ijXIsTWjDBjm0abdDFHMzD0AI=&xsec_source=pc_pgyexport",
+      "k": 405.0,
+      "fs": 0.0,
+      "exp": 8517,
+      "read": 1599,
+      "likes": 28,
+      "favs": 11,
+      "comments": 0,
+      "seed": 0,
+      "deep": 0,
+      "iti": null,
+      "ti": null,
+      "tiShare": null
+    },
+    {
+      "id": "n12",
+      "product": "酸奶碗+芒果船",
+      "productRaw": "酸奶碗+芒果船",
+      "date": "2026-08-31",
+      "month": 8,
+      "monthLabel": "8月",
+      "author": "阿哈鲁鲁啊",
+      "link": "https://www.xiaohongshu.com/explore/6a955487000000001f00690f?xsec_token=MBdufUlYl_trRCTCA629ijXJeGCYQDZLdlIRGRkloXBfs=&xsec_source=pc_pgyexport",
+      "k": 1350.0,
+      "fs": 5.0,
+      "exp": 86037,
+      "read": 12316,
+      "likes": 949,
+      "favs": 63,
+      "comments": 5,
+      "seed": 54,
+      "deep": 44,
+      "iti": 0.0926,
+      "ti": 0.1136,
+      "tiShare": 0.8148
+    },
+    {
+      "id": "n14",
+      "product": "酸奶碗+芒果船",
+      "productRaw": "酸奶碗+芒果船",
+      "date": "2026-08-28",
+      "month": 8,
+      "monthLabel": "8月",
+      "author": "虾仁很好恰",
+      "link": "https://www.xiaohongshu.com/explore/6a916f6c0000000020030900?xsec_token=MBfhps3LRJls4YyYVvIKkOabXOwKtoKtyUu6diY-GsXhs=&xsec_source=pc_pgyexport",
+      "k": 220.0,
+      "fs": 739.0,
+      "exp": 61291,
+      "read": 16046,
+      "likes": 168,
+      "favs": 7,
+      "comments": 1,
+      "seed": 4088,
+      "deep": 1774,
+      "iti": 0.1808,
+      "ti": 0.4166,
+      "tiShare": 0.434
+    },
+    {
+      "id": "n15",
+      "product": "酸奶碗+芒果船",
+      "productRaw": "酸奶碗+芒果船",
+      "date": "2026-08-27",
+      "month": 8,
+      "monthLabel": "8月",
+      "author": "koooo",
+      "link": "https://www.xiaohongshu.com/explore/6a8fd673000000002501e837?xsec_token=MBN0LQawxv4hdDSqc4XLq32rxRdJLpA8CoDaTathDUzSo=&xsec_source=pc_pgyexport",
+      "k": 1170.0,
+      "fs": 620.0,
+      "exp": 90196,
+      "read": 14495,
+      "likes": 850,
+      "favs": 69,
+      "comments": 35,
+      "seed": 1468,
+      "deep": 367,
+      "iti": 0.4223,
+      "ti": 1.6894,
+      "tiShare": 0.25
+    },
+    {
+      "id": "n18",
+      "product": "酸奶碗",
+      "productRaw": "酸奶碗",
+      "date": "2026-08-26",
+      "month": 8,
+      "monthLabel": "8月",
+      "author": "不爱吃汉堡",
+      "link": "https://www.xiaohongshu.com/explore/6a8e7bde000000000b024b0d?xsec_token=MBhbdHdz9eB1Zsqi6c5GSMDvSgz1dSJiBdD5aY_tOXBpc=&xsec_source=pc_pgyexport",
+      "k": 400.0,
+      "fs": 24.0,
+      "exp": 12611,
+      "read": 3837,
+      "likes": 70,
+      "favs": 15,
+      "comments": 16,
+      "seed": 89,
+      "deep": 59,
+      "iti": 0.2697,
+      "ti": 0.4068,
+      "tiShare": 0.6629
+    },
+    {
+      "id": "n17",
+      "product": "酸奶碗",
+      "productRaw": "酸奶碗",
+      "date": "2026-08-26",
+      "month": 8,
+      "monthLabel": "8月",
+      "author": "CarboQueen",
+      "link": "https://www.xiaohongshu.com/explore/6a8e9da50000000006011584?xsec_token=MBhbdHdz9eB1Zsqi6c5GSMDnV6QtRNP8T7ac81QoK-ND8=&xsec_source=pc_pgyexport",
+      "k": 457.0,
+      "fs": 3.0,
+      "exp": 12076,
+      "read": 2475,
+      "likes": 71,
+      "favs": 13,
+      "comments": 14,
+      "seed": 14,
+      "deep": 9,
+      "iti": 0.2143,
+      "ti": 0.3333,
+      "tiShare": 0.6429
+    },
+    {
+      "id": "n16",
+      "product": "酸奶碗",
+      "productRaw": "酸奶碗",
+      "date": "2026-08-26",
+      "month": 8,
+      "monthLabel": "8月",
+      "author": "土豆仔ooo",
+      "link": "https://www.xiaohongshu.com/explore/6a8ea232000000000b026665?xsec_token=MBhbdHdz9eB1Zsqi6c5GSMDofqlWE8KCNcsbL0N4aAFQw=&xsec_source=pc_pgyexport",
+      "k": 960.0,
+      "fs": 23.0,
+      "exp": 8580,
+      "read": 1215,
+      "likes": 230,
+      "favs": 21,
+      "comments": 12,
+      "seed": 47,
+      "deep": 4,
+      "iti": 0.4894,
+      "ti": 5.75,
+      "tiShare": 0.0851
+    },
+    {
+      "id": "n20",
+      "product": "酸奶碗+芒果船",
+      "productRaw": "酸奶碗+芒果船",
+      "date": "2026-08-25",
+      "month": 8,
+      "monthLabel": "8月",
+      "author": "LINRO",
+      "link": "https://www.xiaohongshu.com/explore/6a8d3dde000000001700385a?xsec_token=MBTcsiuygLk2kssILnO70At_-qnt6JgSEVueN5izgm7UI=&xsec_source=pc_pgyexport",
+      "k": 420.0,
+      "fs": 499.0,
+      "exp": 70582,
+      "read": 11344,
+      "likes": 140,
+      "favs": 34,
+      "comments": 9,
+      "seed": 815,
+      "deep": 325,
+      "iti": 0.6123,
+      "ti": 1.5354,
+      "tiShare": 0.3988
+    },
+    {
+      "id": "n19",
+      "product": "酸奶碗+芒果船",
+      "productRaw": "酸奶碗+芒果船",
+      "date": "2026-08-25",
+      "month": 8,
+      "monthLabel": "8月",
+      "author": "豆包爱喝豆奶",
+      "link": "https://www.xiaohongshu.com/explore/6a8c69cc000000002802aa9d?xsec_token=MB9g1duN-odl5Y29_Nf2eOo-0rG9QzufnQzbT3XR9BMME=&xsec_source=pc_pgyexport",
+      "k": 440.0,
+      "fs": 28.0,
+      "exp": 12499,
+      "read": 4596,
+      "likes": 70,
+      "favs": 25,
+      "comments": 2,
+      "seed": 43,
+      "deep": 9,
+      "iti": 0.6512,
+      "ti": 3.1111,
+      "tiShare": 0.2093
+    },
+    {
+      "id": "n21",
+      "product": "酸奶碗",
+      "productRaw": "酸奶碗",
+      "date": "2026-08-24",
+      "month": 8,
+      "monthLabel": "8月",
+      "author": "铃晞吃了么",
+      "link": "https://www.xiaohongshu.com/explore/6a8c18e9000000002b02425f?xsec_token=MB9g1duN-odl5Y29_Nf2eOo1aJSFItzNw4fkKLHVa5Tvo=&xsec_source=pc_pgyexport",
+      "k": 550.0,
+      "fs": 3.0,
+      "exp": 82640,
+      "read": 11177,
+      "likes": 604,
+      "favs": 214,
+      "comments": 18,
+      "seed": 2,
+      "deep": 0,
+      "iti": 1.5,
+      "ti": null,
+      "tiShare": 0.0
+    },
+    {
+      "id": "n22",
+      "product": "酸奶碗+芒果船",
+      "productRaw": "酸奶碗+芒果船",
+      "date": "2026-08-21",
+      "month": 8,
+      "monthLabel": "8月",
+      "author": "是图图辣",
+      "link": "https://www.xiaohongshu.com/explore/6a880fe0000000000501541a?xsec_token=MBknC_Cj1tlkV5NNfePXLD4FV-eXSlhPbPOzpuCBxaZZg=&xsec_source=pc_pgyexport",
+      "k": 589.0,
+      "fs": 1.0,
+      "exp": 7349,
+      "read": 1596,
+      "likes": 32,
+      "favs": 11,
+      "comments": 4,
+      "seed": 1,
+      "deep": 0,
+      "iti": 1.0,
+      "ti": null,
+      "tiShare": 0.0
+    }
+  ],
+  "products": [
+    "芒果船",
+    "芒果船+酸奶碗",
+    "芒果船+酸奶膏",
+    "芒果船+酸奶膏+酸奶碗",
+    "酸奶碗",
+    "酸奶碗+芒果船"
+  ],
+  "sales": {
+    "internal": {
+      "pre": {
+        "label": "投放前",
+        "total": 25472,
+        "daily": 566.0,
+        "days": 45,
+        "orderDays": 33,
+        "start": "2026-07-07",
+        "end": "2026-08-20"
+      },
+      "during": {
+        "label": "投放期",
+        "total": 41000,
+        "daily": 891.3,
+        "days": 46,
+        "orderDays": 29,
+        "start": "2026-08-21",
+        "end": "2026-10-05"
+      },
+      "daily": [
+        {
+          "date": "2026-07-07",
+          "value": 0,
+          "period": "pre",
+          "yogurt": null
+        },
+        {
+          "date": "2026-07-08",
+          "value": 0,
+          "period": "pre",
+          "yogurt": null
+        },
+        {
+          "date": "2026-07-09",
+          "value": 0,
+          "period": "pre",
+          "yogurt": null
+        },
+        {
+          "date": "2026-07-10",
+          "value": 3071,
+          "period": "pre",
+          "yogurt": null
+        },
+        {
+          "date": "2026-07-11",
+          "value": 0,
+          "period": "pre",
+          "yogurt": null
+        },
+        {
+          "date": "2026-07-12",
+          "value": 484,
+          "period": "pre",
+          "yogurt": null
+        },
+        {
+          "date": "2026-07-13",
+          "value": 578,
+          "period": "pre",
+          "yogurt": null
+        },
+        {
+          "date": "2026-07-14",
+          "value": 0,
+          "period": "pre",
+          "yogurt": null
+        },
+        {
+          "date": "2026-07-15",
+          "value": 378,
+          "period": "pre",
+          "yogurt": null
+        },
+        {
+          "date": "2026-07-16",
+          "value": 0,
+          "period": "pre",
+          "yogurt": null
+        },
+        {
+          "date": "2026-07-17",
+          "value": 1572,
+          "period": "pre",
+          "yogurt": null
+        },
+        {
+          "date": "2026-07-18",
+          "value": 1152,
+          "period": "pre",
+          "yogurt": null
+        },
+        {
+          "date": "2026-07-19",
+          "value": 574,
+          "period": "pre",
+          "yogurt": null
+        },
+        {
+          "date": "2026-07-20",
+          "value": 484,
+          "period": "pre",
+          "yogurt": 205.49
+        },
+        {
+          "date": "2026-07-21",
+          "value": 380,
+          "period": "pre",
+          "yogurt": 201.58
+        },
+        {
+          "date": "2026-07-22",
+          "value": 336,
+          "period": "pre",
+          "yogurt": 246.79
+        },
+        {
+          "date": "2026-07-23",
+          "value": 386,
+          "period": "pre",
+          "yogurt": 234.77
+        },
+        {
+          "date": "2026-07-24",
+          "value": 1254,
+          "period": "pre",
+          "yogurt": 189.12
+        },
+        {
+          "date": "2026-07-25",
+          "value": 444,
+          "period": "pre",
+          "yogurt": 274.88
+        },
+        {
+          "date": "2026-07-26",
+          "value": 578,
+          "period": "pre",
+          "yogurt": 403.71
+        },
+        {
+          "date": "2026-07-27",
+          "value": 516,
+          "period": "pre",
+          "yogurt": 269.08
+        },
+        {
+          "date": "2026-07-28",
+          "value": 764,
+          "period": "pre",
+          "yogurt": 252.77
+        },
+        {
+          "date": "2026-07-29",
+          "value": 0,
+          "period": "pre",
+          "yogurt": 306.72
+        },
+        {
+          "date": "2026-07-30",
+          "value": 452,
+          "period": "pre",
+          "yogurt": 346.64
+        },
+        {
+          "date": "2026-07-31",
+          "value": 1574,
+          "period": "pre",
+          "yogurt": 320.6
+        },
+        {
+          "date": "2026-08-01",
+          "value": 0,
+          "period": "pre",
+          "yogurt": 341.37
+        },
+        {
+          "date": "2026-08-02",
+          "value": 668,
+          "period": "pre",
+          "yogurt": 342.97
+        },
+        {
+          "date": "2026-08-03",
+          "value": 160,
+          "period": "pre",
+          "yogurt": 392.88
+        },
+        {
+          "date": "2026-08-04",
+          "value": 276,
+          "period": "pre",
+          "yogurt": 350.68
+        },
+        {
+          "date": "2026-08-05",
+          "value": 0,
+          "period": "pre",
+          "yogurt": 329.36
+        },
+        {
+          "date": "2026-08-06",
+          "value": 84,
+          "period": "pre",
+          "yogurt": 360.79
+        },
+        {
+          "date": "2026-08-07",
+          "value": 2096,
+          "period": "pre",
+          "yogurt": 337.82
+        },
+        {
+          "date": "2026-08-08",
+          "value": 1868,
+          "period": "pre",
+          "yogurt": 377.26
+        },
+        {
+          "date": "2026-08-09",
+          "value": 680,
+          "period": "pre",
+          "yogurt": 405.05
+        },
+        {
+          "date": "2026-08-10",
+          "value": 628,
+          "period": "pre",
+          "yogurt": 387.01
+        },
+        {
+          "date": "2026-08-11",
+          "value": 7,
+          "period": "pre",
+          "yogurt": 296.03
+        },
+        {
+          "date": "2026-08-12",
+          "value": 0,
+          "period": "pre",
+          "yogurt": 251.0
+        },
+        {
+          "date": "2026-08-13",
+          "value": 0,
+          "period": "pre",
+          "yogurt": 267.1
+        },
+        {
+          "date": "2026-08-14",
+          "value": 1360,
+          "period": "pre",
+          "yogurt": 279.37
+        },
+        {
+          "date": "2026-08-15",
+          "value": 1596,
+          "period": "pre",
+          "yogurt": 317.02
+        },
+        {
+          "date": "2026-08-16",
+          "value": 526,
+          "period": "pre",
+          "yogurt": 325.85
+        },
+        {
+          "date": "2026-08-17",
+          "value": 510,
+          "period": "pre",
+          "yogurt": 415.12
+        },
+        {
+          "date": "2026-08-18",
+          "value": 4,
+          "period": "pre",
+          "yogurt": 425.11
+        },
+        {
+          "date": "2026-08-19",
+          "value": 32,
+          "period": "pre",
+          "yogurt": 456.08
+        },
+        {
+          "date": "2026-08-20",
+          "value": 0,
+          "period": "pre",
+          "yogurt": 497.66
+        },
+        {
+          "date": "2026-08-21",
+          "value": 1360,
+          "period": "during",
+          "yogurt": 493.53
+        },
+        {
+          "date": "2026-08-22",
+          "value": 2484,
+          "period": "during",
+          "yogurt": 560.89
+        },
+        {
+          "date": "2026-08-23",
+          "value": 0,
+          "period": "during",
+          "yogurt": 589.0
+        },
+        {
+          "date": "2026-08-24",
+          "value": 534,
+          "period": "during",
+          "yogurt": 500.68
+        },
+        {
+          "date": "2026-08-25",
+          "value": 122,
+          "period": "during",
+          "yogurt": 542.61
+        },
+        {
+          "date": "2026-08-26",
+          "value": 1,
+          "period": "during",
+          "yogurt": 601.95
+        },
+        {
+          "date": "2026-08-27",
+          "value": 0,
+          "period": "during",
+          "yogurt": 653.17
+        },
+        {
+          "date": "2026-08-28",
+          "value": 1940,
+          "period": "during",
+          "yogurt": 837.54
+        },
+        {
+          "date": "2026-08-29",
+          "value": 1818,
+          "period": "during",
+          "yogurt": 823.71
+        },
+        {
+          "date": "2026-08-30",
+          "value": 806,
+          "period": "during",
+          "yogurt": 821.85
+        },
+        {
+          "date": "2026-08-31",
+          "value": 0,
+          "period": "during",
+          "yogurt": 706.86
+        },
+        {
+          "date": "2026-09-01",
+          "value": 526,
+          "period": "during",
+          "yogurt": 581.15
+        },
+        {
+          "date": "2026-09-02",
+          "value": 9,
+          "period": "during",
+          "yogurt": 574.38
+        },
+        {
+          "date": "2026-09-03",
+          "value": 0,
+          "period": "during",
+          "yogurt": 611.2
+        },
+        {
+          "date": "2026-09-04",
+          "value": 1305,
+          "period": "during",
+          "yogurt": 567.48
+        },
+        {
+          "date": "2026-09-05",
+          "value": 2206,
+          "period": "during",
+          "yogurt": 583.67
+        },
+        {
+          "date": "2026-09-06",
+          "value": 458,
+          "period": "during",
+          "yogurt": 625.67
+        },
+        {
+          "date": "2026-09-07",
+          "value": 260,
+          "period": "during",
+          "yogurt": 740.91
+        },
+        {
+          "date": "2026-09-08",
+          "value": 514,
+          "period": "during",
+          "yogurt": 742.95
+        },
+        {
+          "date": "2026-09-09",
+          "value": 62,
+          "period": "during",
+          "yogurt": 762.93
+        },
+        {
+          "date": "2026-09-10",
+          "value": 0,
+          "period": "during",
+          "yogurt": 725.57
+        },
+        {
+          "date": "2026-09-11",
+          "value": 0,
+          "period": "during",
+          "yogurt": 707.92
+        },
+        {
+          "date": "2026-09-12",
+          "value": 0,
+          "period": "during",
+          "yogurt": 743.77
+        },
+        {
+          "date": "2026-09-13",
+          "value": 202,
+          "period": "during",
+          "yogurt": 738.18
+        },
+        {
+          "date": "2026-09-14",
+          "value": 5896,
+          "period": "during",
+          "yogurt": 650.53
+        },
+        {
+          "date": "2026-09-15",
+          "value": 0,
+          "period": "during",
+          "yogurt": 759.74
+        },
+        {
+          "date": "2026-09-16",
+          "value": 0,
+          "period": "during",
+          "yogurt": 798.08
+        },
+        {
+          "date": "2026-09-17",
+          "value": 0,
+          "period": "during",
+          "yogurt": 932.08
+        },
+        {
+          "date": "2026-09-18",
+          "value": 3476,
+          "period": "during",
+          "yogurt": 862.49
+        },
+        {
+          "date": "2026-09-19",
+          "value": 782,
+          "period": "during",
+          "yogurt": 1072.92
+        },
+        {
+          "date": "2026-09-20",
+          "value": 612,
+          "period": "during",
+          "yogurt": 829.43
+        },
+        {
+          "date": "2026-09-21",
+          "value": 188,
+          "period": "during",
+          "yogurt": 926.34
+        },
+        {
+          "date": "2026-09-22",
+          "value": 15,
+          "period": "during",
+          "yogurt": 906.74
+        },
+        {
+          "date": "2026-09-23",
+          "value": 0,
+          "period": "during",
+          "yogurt": 784.18
+        },
+        {
+          "date": "2026-09-24",
+          "value": 0,
+          "period": "during",
+          "yogurt": 803.03
+        },
+        {
+          "date": "2026-09-25",
+          "value": 7412,
+          "period": "during",
+          "yogurt": 806.83
+        },
+        {
+          "date": "2026-09-26",
+          "value": 44,
+          "period": "during",
+          "yogurt": 657.86
+        },
+        {
+          "date": "2026-09-27",
+          "value": 0,
+          "period": "during",
+          "yogurt": 634.4
+        },
+        {
+          "date": "2026-09-28",
+          "value": 0,
+          "period": "during",
+          "yogurt": 628.98
+        },
+        {
+          "date": "2026-09-29",
+          "value": 0,
+          "period": "during",
+          "yogurt": 599.95
+        },
+        {
+          "date": "2026-09-30",
+          "value": 0,
+          "period": "during",
+          "yogurt": 550.36
+        },
+        {
+          "date": "2026-10-01",
+          "value": 0,
+          "period": "during",
+          "yogurt": 489.44
+        },
+        {
+          "date": "2026-10-02",
+          "value": 3340,
+          "period": "during",
+          "yogurt": 501.9
+        },
+        {
+          "date": "2026-10-03",
+          "value": 3644,
+          "period": "during",
+          "yogurt": 495.38
+        },
+        {
+          "date": "2026-10-04",
+          "value": 462,
+          "period": "during",
+          "yogurt": 515.46
+        },
+        {
+          "date": "2026-10-05",
+          "value": 522,
+          "period": "during",
+          "yogurt": 691.77
+        }
+      ]
+    },
+    "pos": {
+      "months": [
+        "7月",
+        "8月",
+        "9月"
+      ],
+      "totals": [
+        339382,
+        316864,
+        397069
+      ],
+      "grandTotal": 1053315,
+      "products": [
+        {
+          "name": "芒果船",
+          "color": "#8FA99A",
+          "values": [
+            49818,
+            49818,
+            48211
+          ],
+          "total": 147847,
+          "share9": 0.12141718441882897,
+          "shareChange": -0.02537315802714636
+        },
+        {
+          "name": "夹系列",
+          "color": "#F5C400",
+          "values": [
+            221100,
+            195202,
+            184046
+          ],
+          "total": 600348,
+          "share9": 0.46351137963427014,
+          "shareChange": -0.1879668955836259
+        },
+        {
+          "name": "酸奶碗",
+          "color": "#0E8A4A",
+          "values": [
+            68464,
+            71844,
+            164812
+          ],
+          "total": 305120,
+          "share9": 0.41507143594690094,
+          "shareChange": 0.21334005361077232
+        }
+      ]
+    }
+  }
+}</script>
+<script>
+(function(){
+  'use strict';
+
+  var DATA = JSON.parse(document.getElementById('dashboard-data').textContent);
+  var OV = DATA.overview;
+  var NOTES = DATA.notes;
+  var MONTH_LABEL = {all:'全部（8–9月）', m8:'8月', m9:'9月'};
+  var FORMATTERS = {
+    int: function(v){ return Math.round(v).toLocaleString('zh-CN'); },
+    money0: function(v){ return Math.round(v).toLocaleString('zh-CN'); },
+    money2: function(v){ return Number(v).toFixed(2); },
+    pct0: function(v){ return Math.round(v*100) + '%'; },
+    pct1: function(v){ return (v*100).toFixed(1) + '%'; }
+  };
+  var METRICS = [
+    {key:'notes', label:'发布笔记量', unit:'篇', fmtKey:'int', tip:'统计周期内发布的笔记数量'},
+    {key:'fee', label:'费用', wide:true, tip:'K费用 + FS费用'},
+    {key:'exp', label:'站内总曝光', fmtKey:'int', tip:'站内笔记总曝光量'},
+    {key:'read', label:'站内总阅读', fmtKey:'int', tip:'站内笔记总阅读量'},
+    {key:'inter', label:'站内总互动', fmtKey:'int', info:true, tip:'点赞 + 收藏 + 评论'},
+    {key:'seed', label:'新增种草人群', unit:'人', fmtKey:'int', tip:'新增种草人群规模'},
+    {key:'deep', label:'新增深度种草人群', unit:'人', fmtKey:'int', tip:'新增深度种草人群规模'},
+    {key:'iti', label:'I+TI综合成本', currency:true, fmtKey:'money2', info:true, tip:'I+TI综合成本 = FS费用 ÷ 新增种草人群'},
+    {key:'ti', label:'TI成本', currency:true, fmtKey:'money2', info:true, tip:'TI成本 = FS费用 ÷ 新增深度种草人群'},
+    {key:'tiShare', label:'TI占比', fmtKey:'pct1', info:true, wide:true, tip:'TI占比 = 新增深度种草人群 ÷ 新增种草人群'}
+  ];
+
+  var state = {month:'all', sortKey:'date', sortDir:'desc'};
+  try{
+    var initialMonth = new URLSearchParams(location.search).get('month');
+    if(initialMonth && MONTH_LABEL[initialMonth]) state.month = initialMonth;
+  }catch(e){}
+  var lastValues = {};
+  var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function $(sel, root){ return (root || document).querySelector(sel); }
+  function $$(sel, root){ return Array.prototype.slice.call((root || document).querySelectorAll(sel)); }
+  function esc(s){
+    return String(s == null ? '' : s).replace(/[&<>"']/g, function(c){
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+    });
+  }
+  function safeUrl(u){
+    try{
+      var url = new URL(u);
+      return /^https?:$/.test(url.protocol) ? url.href : '#';
+    }catch(e){ return '#'; }
+  }
+  function fmtInt(n){ return Number(n).toLocaleString('zh-CN'); }
+  function fmtMoney0(n){ return '¥' + Math.round(Number(n)).toLocaleString('zh-CN'); }
+  function fmtMoney2(n){ return '¥' + Number(n).toFixed(2); }
+
+  function notesFor(month){
+    if(month === 'm8') return NOTES.filter(function(n){ return n.month === 8; });
+    if(month === 'm9') return NOTES.filter(function(n){ return n.month === 9; });
+    return NOTES;
+  }
+
+  function overviewMetrics(month){
+    var o = OV[month];
+    return {
+      notes:o.notes, k:o.k, fs:o.fs, exp:o.exp, read:o.read, inter:o.inter,
+      cpm:o.cpm, cpe:o.cpe,
+      seed:o.seed, deep:o.deep,
+      iti:o.seed ? o.fs / o.seed : null,
+      ti:o.deep ? o.fs / o.deep : null,
+      tiShare:o.seed ? o.deep / o.seed : null
+    };
+  }
+
+  function getFiltered(){
+    var rows = notesFor(state.month);
+    var key = state.sortKey;
+    rows.sort(function(a, b){
+      var av = a[key], bv = b[key];
+      if(av == null && bv == null) return 0;
+      if(av == null) return 1;
+      if(bv == null) return -1;
+      var cmp;
+      if(typeof av === 'string') cmp = av.localeCompare(bv, 'zh-CN');
+      else cmp = av - bv;
+      return state.sortDir === 'asc' ? cmp : -cmp;
+    });
+    return rows;
+  }
+
+  function animateNumber(node, from, to, fmt){
+    if(reduceMotion || from === to){
+      node.textContent = fmt(to);
+      return;
+    }
+    var start = performance.now();
+    var dur = 520;
+    function frame(t){
+      var p = Math.min(1, (t - start) / dur);
+      var e = 1 - Math.pow(1 - p, 3);
+      node.textContent = fmt(from + (to - from) * e);
+      if(p < 1) requestAnimationFrame(frame);
+    }
+    requestAnimationFrame(frame);
+  }
+
+  function renderKpis(){
+    var o = overviewMetrics(state.month);
+    var grid = $('#kpiGrid');
+    var cpm = o.cpm != null ? o.cpm : (o.exp ? (o.k + o.fs) / o.exp * 1000 : 0);
+    var cpe = o.cpe != null ? o.cpe : (o.inter ? (o.k + o.fs) / o.inter : 0);
+    var bench = DATA.benchmark && DATA.benchmark.tiShare;
+    function fmtOne(v){ return Number(v).toFixed(1).replace(/\.0$/, ''); }
+    $$('.kpi', grid).forEach(function(card){
+      var node = $('.num', card);
+      if(node) lastValues[card.getAttribute('data-key')] = Number(node.getAttribute('data-to') || 0);
+    });
+
+    grid.innerHTML = METRICS.map(function(m, idx){
+      if(m.key === 'fee'){
+        return '<article class="kpi wide fee-kpi" data-key="fee" title="K费用 + FS费用" style="animation-delay:' + (idx * 22) + 'ms">' +
+          '<div class="label">' + m.label + '</div>' +
+          '<div class="fee-split">' +
+            '<div class="fee-part"><div class="fee-part-label">K费用</div><div class="fee-part-value"><span class="cur">¥</span>' + fmtInt(o.k) + '</div></div>' +
+            '<div class="fee-part"><div class="fee-part-label">FS费用</div><div class="fee-part-value"><span class="cur">¥</span>' + fmtInt(o.fs) + '</div></div>' +
+          '</div>' +
+        '</article>';
+      }
+      var cur = o[m.key];
+      var from = lastValues[m.key] == null ? 0 : lastValues[m.key];
+      var fmt = FORMATTERS[m.fmtKey];
+      var ratioNote = m.key === 'tiShare' ? '<span class="ratio-note">深度 ' + fmtInt(o.deep) + ' / 种草 ' + fmtInt(o.seed) + '</span>' : '';
+      var benchNote = (m.key === 'tiShare' && bench != null) ? '<span class="ratio-benchmark-note" title="品牌6–9月TI占比均值">品牌6–9月TI占比均值 ' + (bench * 100).toFixed(1) + '%</span>' : '';
+      var sub = '';
+      if(m.key === 'exp') sub = '<div class="kpi-metric" title="CPM = (K费用 + FS费用) ÷ 总曝光 × 1000"><span>CPM</span><b>¥' + fmtOne(cpm) + '</b></div>';
+      if(m.key === 'inter') sub = '<div class="kpi-metric" title="CPE = (K费用 + FS费用) ÷ 总互动"><span>CPE</span><b>¥' + fmtOne(cpe) + '</b></div>';
+      var cls = 'kpi' + (m.cls ? ' ' + m.cls : '') + (m.wide ? ' wide' : '') + ((m.key === 'exp' || m.key === 'inter') ? ' metric-kpi' : '');
+      return '<article class="' + cls + '" data-key="' + m.key + '" title="' + esc(m.tip) + '" style="animation-delay:' + (idx * 22) + 'ms">' +
+        '<div class="label">' + m.label + (m.info ? '<span class="info" title="' + esc(m.tip) + '" aria-hidden="true">i</span>' : '') + '</div>' +
+        '<div class="value">' + (m.currency ? '<span class="cur">¥</span>' : '') +
+          '<span class="num" data-to="' + cur + '" data-fmt="' + m.fmtKey + '">' + fmt(from) + '</span>' +
+          (m.unit ? '<span class="unit">' + m.unit + '</span>' : '') +
+          (sub || '') +
+        '</div>' +
+        (m.key === 'tiShare' ? '<div class="ratio-track"><span style="width:' + Math.min(100, cur * 100) + '%"></span>' + (bench != null ? '<i class="ratio-benchmark" style="left:' + Math.min(100, bench * 100).toFixed(1) + '%"></i>' : '') + '</div>' : '') +
+        (m.key === 'tiShare' ? '<div class="foot foot-between">' + benchNote + ratioNote + '</div>' : '') +
+      '</article>';
+    }).join('');
+
+    $$('.num', grid).forEach(function(node){
+      var key = node.closest('.kpi').getAttribute('data-key');
+      var from = lastValues[key] == null ? 0 : lastValues[key];
+      var to = Number(node.getAttribute('data-to'));
+      animateNumber(node, from, to, FORMATTERS[node.getAttribute('data-fmt')]);
+    });
+  }
+
+  function renderFee(){
+    var rows = [['m8', '8月'], ['m9', '9月']];
+    $('#feeRows').innerHTML = rows.map(function(item){
+      var key = item[0], label = item[1];
+      var o = OV[key];
+      var total = o.k + o.fs;
+      var kp = total ? o.k / total * 100 : 0;
+      var fp = total ? o.fs / total * 100 : 0;
+      var active = state.month === 'all' || state.month === key;
+      return '<div class="fee-row' + (active ? ' active' : '') + '">' +
+        '<div class="fee-row-top"><span class="m">' + label + '</span><span class="t">' + fmtMoney0(total) + '</span></div>' +
+        '<div class="fee-track">' +
+          '<div class="fee-seg k" style="width:' + kp + '%">K ' + kp.toFixed(0) + '%</div>' +
+          '<div class="fee-seg fs" style="width:' + fp + '%">FS ' + fp.toFixed(0) + '%</div>' +
+        '</div>' +
+        '<div class="fee-detail">' +
+          '<span><i class="k"></i>K ' + fmtMoney0(o.k) + '</span>' +
+          '<span><i class="fs"></i>FS ' + fmtMoney0(o.fs) + '</span>' +
+        '</div>' +
+      '</div>';
+    }).join('');
+  }
+
+  function cellMoney(v){
+    if(v == null) return '<span class="na">—</span>';
+    return '<span class="money"><span class="c">¥</span>' + Number(v).toLocaleString('zh-CN') + '</span>';
+  }
+  function cellMoney2(v){
+    if(v == null) return '<span class="na">—</span>';
+    return '<span class="money"><span class="c">¥</span>' + Number(v).toFixed(2) + '</span>';
+  }
+  function cellNum(v){
+    if(v == null) return '<span class="na">—</span>';
+    return Number(v).toLocaleString('zh-CN');
+  }
+  function cellRatio(v){
+    if(v == null) return '<span class="na">—</span>';
+    var pct = Math.round(v * 100);
+    var cls = pct >= 50 ? 'high' : (pct >= 20 ? 'mid' : 'low');
+    return '<span class="ratio ' + cls + '">' + pct + '%</span>';
+  }
+  function productClass(p){
+    if(p === '芒果船') return 'mango';
+    if(p === '酸奶碗') return 'bowl';
+    return 'combo';
+  }
+
+  function renderTable(){
+    var rows = getFiltered();
+    var body = $('#tableBody');
+
+    if(!rows.length){
+      body.innerHTML = '<tr><td colspan="16"><div class="empty-state">' +
+        '<div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.2-3.2"></path></svg></div>' +
+        '<p>暂无笔记</p>' +
+      '</div></td></tr>';
+    }else{
+      var sum = function(key){
+        return rows.reduce(function(a, n){ return a + (Number(n[key]) || 0); }, 0);
+      };
+      var fsSum = sum('fs');
+      var seed = sum('seed');
+      var deep = sum('deep');
+      var iti = seed ? fsSum / seed : null;
+      var ti = deep ? fsSum / deep : null;
+      var share = (seed && deep != null) ? deep / seed : null;
+
+      var totalRow = '<tr class="total-row">' +
+        '<td class="sticky-col" title="合计（TTL）">TTL</td>' +
+        '<td>—</td>' +
+        '<td>' + rows.length + ' 条</td>' +
+        '<td>—</td>' +
+        '<td class="num">' + cellMoney(sum('k')) + '</td>' +
+        '<td class="num">' + cellMoney(fsSum) + '</td>' +
+        '<td class="num">' + cellNum(sum('exp')) + '</td>' +
+        '<td class="num">' + cellNum(sum('read')) + '</td>' +
+        '<td class="num">' + cellNum(sum('likes')) + '</td>' +
+        '<td class="num">' + cellNum(sum('favs')) + '</td>' +
+        '<td class="num">' + cellNum(sum('comments')) + '</td>' +
+        '<td class="num">' + cellNum(seed) + '</td>' +
+        '<td class="num">' + cellNum(deep) + '</td>' +
+        '<td class="num" title="FS费用 ÷ 新增种草人群">' + cellMoney2(iti) + '</td>' +
+        '<td class="num" title="FS费用 ÷ 新增深度种草人群">' + cellMoney2(ti) + '</td>' +
+        '<td class="num">' + cellRatio(share) + '</td>' +
+      '</tr>';
+
+      var dataRows = rows.map(function(n){
+        var pcls = productClass(n.product);
+        var rowIti = (n.fs != null && n.seed) ? n.fs / n.seed : null;
+        var rowTi = (n.fs != null && n.deep) ? n.fs / n.deep : null;
+        var rowShare = (n.seed && n.deep != null) ? n.deep / n.seed : null;
+        return '<tr data-id="' + esc(n.id) + '">' +
+          '<td class="sticky-col"><span class="product-chip ' + pcls + '" title="' + esc(n.productRaw) + '">' + esc(n.product) + '</span></td>' +
+          '<td><span class="date">' + esc(n.date) + '</span></td>' +
+          '<td><span class="author-name" title="' + esc(n.author) + '">' + esc(n.author) + '</span></td>' +
+          '<td><a class="note-link" href="' + esc(safeUrl(n.link)) + '" target="_blank" rel="noopener noreferrer" title="打开小红书笔记">查看<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"></path><path d="M9 7h8v8"></path></svg></a></td>' +
+          '<td class="num">' + cellMoney(n.k) + '</td>' +
+          '<td class="num">' + cellMoney(n.fs) + '</td>' +
+          '<td class="num">' + cellNum(n.exp) + '</td>' +
+          '<td class="num">' + cellNum(n.read) + '</td>' +
+          '<td class="num">' + cellNum(n.likes) + '</td>' +
+          '<td class="num">' + cellNum(n.favs) + '</td>' +
+          '<td class="num">' + cellNum(n.comments) + '</td>' +
+          '<td class="num">' + cellNum(n.seed) + '</td>' +
+          '<td class="num">' + cellNum(n.deep) + '</td>' +
+          '<td class="num">' + cellMoney2(rowIti) + '</td>' +
+          '<td class="num">' + cellMoney2(rowTi) + '</td>' +
+          '<td class="num">' + cellRatio(rowShare) + '</td>' +
+        '</tr>';
+      }).join('');
+
+      body.innerHTML = totalRow + dataRows;
+    }
+
+    $$('#detailTable thead th').forEach(function(th){
+      var key = th.getAttribute('data-sort');
+      if(!key) return;
+      var sorted = key === state.sortKey;
+      th.classList.toggle('sorted', sorted);
+      th.setAttribute('aria-sort', sorted ? (state.sortDir === 'asc' ? 'ascending' : 'descending') : 'none');
+      var ind = th.querySelector('.sort-ind');
+      if(ind) ind.textContent = sorted ? (state.sortDir === 'asc' ? '▲' : '▼') : '↕';
+    });
+  }
+
+
+  function pct1(n){ return (Number(n) * 100).toFixed(1) + '%'; }
+  function md(date){ var p = String(date).split('-'); return p[1] + '.' + p[2]; }
+
+  function salesKpi(label, value, unit, foot, cls){
+    return '<article class="kpi ' + (cls || '') + '">' +
+      '<div class="label">' + label + '</div>' +
+      '<div class="value"><span class="num">' + value + '</span>' + (unit ? '<span class="unit">' + unit + '</span>' : '') + '</div>' +
+      (foot ? '<div class="foot">' + foot + '</div>' : '') +
+    '</article>';
+  }
+
+  function fmtTon(v){
+    return (Number(v) / 1000).toFixed(3).replace(/\.?0+$/, '');
+  }
+  function omsPeriodCard(label, total, daily, date, delta){
+    return '<article class="kpi oms-kpi wide">' +
+      '<div class="label">' + label + '</div>' +
+      '<div class="oms-split">' +
+        '<div class="oms-part">' +
+          '<div class="oms-part-label">提货总量</div>' +
+          '<div class="oms-part-value"><span class="num">' + fmtInt(total) + '</span><span class="unit">桶</span></div>' +
+          '<div class="oms-part-ton">≈ ' + fmtTon(total) + ' 吨</div>' +
+        '</div>' +
+        '<div class="oms-part">' +
+          '<div class="oms-part-label">日均</div>' +
+          '<div class="oms-part-value"><span class="num">' + fmtInt(daily) + '</span><span class="unit">桶/天</span></div>' +
+          '<div class="oms-part-ton">≈ ' + fmtTon(daily) + ' 吨/天</div>' +
+        '</div>' +
+      '</div>' +
+      '<div class="oms-foot"><span class="oms-date">' + date + '</span>' + (delta || '') + '</div>' +
+    '</article>';
+  }
+
+  function renderSales(){
+    var S = DATA.sales;
+    if(!S) return;
+    var pre = S.internal.pre;
+    var during = S.internal.during;
+    var totalLift = (during.total - pre.total) / pre.total;
+    var dailyLift = (during.daily - pre.daily) / pre.daily;
+
+    $('#salesKpiGrid').innerHTML =
+      omsPeriodCard('投放前', pre.total, Math.round(pre.daily), '07.07–08.20', '') +
+      omsPeriodCard('投放期', during.total, Math.round(during.daily), '08.21–10.05',
+        '<span class="oms-deltas"><span>较投放前</span><span>总量 <b>+' + pct1(totalLift) + '</b></span><span>日均 <b>+' + pct1(dailyLift) + '</b></span></span>');
+
+    renderPickupTrend(S.internal);
+    renderPos(S.pos);
+  }
+  function renderPickupTrend(internal){
+    var daily = internal.daily;
+    var n = daily.length;
+    if(!n) return;
+    var vals = daily.map(function(d){ return d.value; });
+    var maxDaily = Math.ceil(Math.max.apply(null, vals) / 2000) * 2000;
+    var maxAvg = Math.ceil(Math.max(internal.pre.daily, internal.during.daily) / 400) * 400;
+    var yogurtVals = daily.map(function(d){ return d.yogurt; }).filter(function(v){ return v != null; });
+    var maxYogurt = yogurtVals.length ? Math.max.apply(null, yogurtVals) * 1.05 : 0;
+    var yogurtPath = '';
+    var yogurtStarted = false;
+    daily.forEach(function(d, i){
+      if(d.yogurt == null || !maxYogurt) return;
+      var x = n === 1 ? 0 : i / (n - 1) * 100;
+      var y = 100 - d.yogurt / maxYogurt * 100;
+      yogurtPath += (yogurtStarted ? ' L' : 'M') + x.toFixed(2) + ' ' + y.toFixed(2);
+      yogurtStarted = true;
+    });
+    var peakDaily = daily[0];
+    daily.forEach(function(d){ if(d.value > peakDaily.value) peakDaily = d; });
+    var peakDailyIdx = daily.indexOf(peakDaily);
+    var peakDailyX = n === 1 ? 0 : peakDailyIdx / (n - 1) * 100;
+    var peakDailyY = 100 - (maxDaily ? peakDaily.value / maxDaily * 100 : 0);
+    var peakYogurt = null;
+    var peakYogurtIdx = -1;
+    daily.forEach(function(d, i){
+      if(d.yogurt != null && (peakYogurt == null || d.yogurt > peakYogurt)){ peakYogurt = d.yogurt; peakYogurtIdx = i; }
+    });
+    var peakYogurtX = peakYogurtIdx >= 0 && n > 1 ? peakYogurtIdx / (n - 1) * 100 : 0;
+    var peakYogurtY = peakYogurt != null && maxYogurt ? 100 - peakYogurt / maxYogurt * 100 : 0;
+    var points = daily.map(function(d, i){
+      var x = n === 1 ? 0 : i / (n - 1) * 100;
+      var y = 100 - (maxDaily ? d.value / maxDaily * 100 : 0);
+      return x.toFixed(2) + ' ' + y.toFixed(2);
+    });
+    var linePath = 'M' + points.join(' L');
+    var areaPath = 'M0 100 L' + points.join(' L') + ' L100 100 Z';
+    var startIdx = daily.findIndex(function(d){ return d.period === 'during'; });
+    if(startIdx < 0) startIdx = n - 1;
+    var startX = n === 1 ? 0 : startIdx / (n - 1) * 100;
+    var preAvg = maxAvg ? internal.pre.daily / maxAvg * 100 : 0;
+    var durAvg = maxAvg ? internal.during.daily / maxAvg * 100 : 0;
+    var yLeft = [maxDaily, maxDaily * 0.75, maxDaily * 0.5, maxDaily * 0.25, 0].map(function(v){ return '<span>' + fmtInt(v) + '</span>'; }).join('');
+    var yRight = [maxAvg, maxAvg * 0.75, maxAvg * 0.5, maxAvg * 0.25, 0].map(function(v){ return '<span>' + fmtInt(v) + '</span>'; }).join('');
+    var labels = [
+      ['2026-07-07', '07.07'],
+      ['2026-08-01', '08.01'],
+      ['2026-08-21', '08.21'],
+      ['2026-09-01', '09.01'],
+      ['2026-10-05', '10.05']
+    ].map(function(item){
+      var idx = daily.findIndex(function(d){ return d.date === item[0]; });
+      if(idx < 0) idx = 0;
+      var left = n === 1 ? 0 : idx / (n - 1) * 100;
+      return '<span style="left:' + left.toFixed(2) + '%">' + item[1] + '</span>';
+    }).join('');
+    var grid = [0, 25, 50, 75, 100].map(function(t){ return '<i style="top:' + t + '%"></i>'; }).join('');
+
+    $('#pickupTrend').innerHTML = '<div class="trend-chart">' +
+      '<div class="trend-axis-left">' + yLeft + '</div>' +
+      '<div class="trend-axis-right">' + yRight + '</div>' +
+      '<div class="trend-plot">' +
+        '<div class="trend-band pre" style="left:0;width:' + startX.toFixed(2) + '%"></div>' +
+        '<div class="trend-band during" style="left:' + startX.toFixed(2) + '%;width:' + (100 - startX).toFixed(2) + '%"></div>' +
+        '<div class="trend-grid">' + grid + '</div>' +
+        '<svg class="trend-daily" viewBox="0 0 100 100" preserveAspectRatio="none" role="img" aria-label="每日提货量折线">' +
+          '<path class="area" d="' + areaPath + '"></path>' +
+          '<path class="line" d="' + linePath + '"></path>' +
+          (yogurtPath ? '<path class="exposure" d="' + yogurtPath + '"></path>' : '') +
+        '</svg>' +
+        '<div class="trend-peak daily" style="left:' + peakDailyX.toFixed(2) + '%;top:' + peakDailyY.toFixed(2) + '%"></div>' +
+        (peakYogurtIdx >= 0 ? '<div class="trend-peak yogurt" style="left:' + peakYogurtX.toFixed(2) + '%;top:' + peakYogurtY.toFixed(2) + '%"></div>' : '') +
+        '<div class="trend-avg pre" style="left:0;width:' + startX.toFixed(2) + '%;bottom:' + preAvg.toFixed(2) + '%"><span>投放前 ' + fmtInt(Math.round(internal.pre.daily)) + '</span></div>' +
+        '<div class="trend-avg during" style="left:' + startX.toFixed(2) + '%;width:' + (100 - startX).toFixed(2) + '%;bottom:' + durAvg.toFixed(2) + '%"><span>投放期 ' + fmtInt(Math.round(internal.during.daily)) + '</span></div>' +
+        '<div class="trend-start" style="left:' + startX.toFixed(2) + '%"><span>08.21 投放开始</span></div>' +
+        '<div class="trend-hover" id="trendHover"></div>' +
+        '<div class="trend-tooltip" id="trendTooltip"></div>' +
+      '</div>' +
+      '<div class="trend-x-axis">' + labels + '</div>' +
+    '</div>';
+
+    var hover = $('#trendHover');
+    var tooltip = $('#trendTooltip');
+    var plot = hover.parentElement;
+    hover.addEventListener('mousemove', function(e){
+      var rect = plot.getBoundingClientRect();
+      var x = Math.max(0, Math.min(rect.width, e.clientX - rect.left));
+      var idx = Math.max(0, Math.min(n - 1, Math.round(x / rect.width * (n - 1))));
+      var d = daily[idx];
+      if(!d) return;
+      var avg = d.period === 'pre' ? internal.pre.daily : internal.during.daily;
+      var yogurtLine = d.yogurt != null ? '<br>酸奶膏曝光 ' + fmtInt(Math.round(d.yogurt)) : '';
+      tooltip.innerHTML = '<b>' + d.date + '</b><br>' + fmtInt(d.value) + ' 桶 · ' + (d.period === 'pre' ? '投放前' : '投放期') + '<br>周期日均 ' + fmtInt(Math.round(avg)) + ' 桶' + yogurtLine;
+      tooltip.style.left = Math.max(70, Math.min(rect.width - 70, x)) + 'px';
+      tooltip.classList.add('show');
+    });
+    hover.addEventListener('mouseleave', function(){ tooltip.classList.remove('show'); });
+  }
+
+  function renderPos(pos){
+    var months = pos.months;
+    var totals = pos.totals;
+    var grand = pos.grandTotal;
+    var shares = totals.map(function(v){ return v / grand * 100; });
+    $('#posKpiGrid').innerHTML = months.map(function(m, i){
+      return salesKpi(m + '销售', fmtInt(totals[i]), '件', '占3个月 ' + shares[i].toFixed(1) + '%' + (i === 2 ? ' · 3个月最高' : ''));
+    }).join('') + salesKpi('7–9月合计', fmtInt(grand), '件', '前台销售数量 · 3个月累计');
+
+    $('#posLegend').innerHTML = pos.products.map(function(p){
+      return '<span><i style="background:' + p.color + '"></i>' + p.name + '</span>';
+    }).join('');
+
+    var W = 440, H = 250, left = 42, right = 12, top = 24, bottom = 28;
+    var plotW = W - left - right, plotH = H - top - bottom;
+    var max = Math.ceil(Math.max.apply(null, totals) / 100000) * 100000;
+    function yScale(v){ return top + plotH - v / max * plotH; }
+    var grid = [0, 100000, 200000, 300000, 400000].map(function(v){
+      var y = yScale(v);
+      return '<line x1="' + left + '" x2="' + (W - right) + '" y1="' + y + '" y2="' + y + '" stroke="#F0EEE6" stroke-dasharray="3 3"></line>' +
+        '<text x="' + (left - 7) + '" y="' + (y + 3) + '" text-anchor="end" font-size="9" fill="#9AA29A">' + fmtInt(v) + '</text>';
+    }).join('');
+    var slot = plotW / 3;
+    var barW = 56;
+    var bars = months.map(function(m, i){
+      var x = left + slot * i + (slot - barW) / 2;
+      var base = top + plotH;
+      var segs = '';
+      pos.products.forEach(function(p){
+        var h = p.values[i] / max * plotH;
+        var y = base - h;
+        segs += '<rect x="' + x + '" y="' + y + '" width="' + barW + '" height="' + h + '" fill="' + p.color + '"><title>' + p.name + ' · ' + m + ' · ' + fmtInt(p.values[i]) + ' 件</title></rect>';
+        if(h > 20){
+          var pct = totals[i] ? p.values[i] / totals[i] * 100 : 0;
+          var txtColor = p.color === '#0E8A4A' ? '#FFFFFF' : '#17211B';
+          segs += '<text x="' + (x + barW / 2) + '" y="' + (y + h / 2 - 2) + '" text-anchor="middle" font-size="8.5" font-weight="700" fill="' + txtColor + '" pointer-events="none">' + pct.toFixed(1) + '%</text>' +
+            '<text x="' + (x + barW / 2) + '" y="' + (y + h / 2 + 9) + '" text-anchor="middle" font-size="7.5" fill="' + txtColor + '" fill-opacity=".9" pointer-events="none">' + fmtInt(p.values[i]) + '</text>';
+        }
+        base = y;
+      });
+      var totalTop = yScale(totals[i]);
+      return '<g>' + segs +
+        '<text x="' + (x + barW / 2) + '" y="' + (totalTop - 7) + '" text-anchor="middle" font-size="10.5" font-weight="700" fill="#17211B">' + fmtInt(totals[i]) + '</text>' +
+        '<text x="' + (x + barW / 2) + '" y="' + (H - 8) + '" text-anchor="middle" font-size="10.5" fill="#778177">' + m + '</text>' +
+      '</g>';
+    }).join('');
+    $('#posChart').innerHTML = '<svg viewBox="0 0 440 250" role="img" aria-label="月度销售与产品结构">' + grid + bars + '</svg>';
+
+    var LW = 440, LH = 100, lLeft = 42, lRight = 12, lTop = 14, lBottom = 22;
+    var lW = LW - lLeft - lRight, lH = LH - lTop - lBottom;
+    var lMax = Math.ceil(Math.max.apply(null, pos.products.map(function(p){ return Math.max.apply(null, p.values); })) / 100000) * 100000;
+    function ly(v){ return lTop + lH - v / lMax * lH; }
+    var lTicks = [0, lMax / 3, lMax * 2 / 3, lMax];
+    var lGrid = lTicks.map(function(v){
+      var y = ly(v);
+      return '<line x1="' + lLeft + '" x2="' + (LW - lRight) + '" y1="' + y + '" y2="' + y + '" stroke="#F0EEE6" stroke-dasharray="3 3"></line>' +
+        '<text x="' + (lLeft - 7) + '" y="' + (y + 3) + '" text-anchor="end" font-size="8" fill="#9AA29A">' + fmtInt(v) + '</text>';
+    }).join('');
+    var lxPos = months.map(function(m, i){ return lLeft + (months.length === 1 ? 0 : lW / (months.length - 1) * i); });
+    var lLines = pos.products.map(function(p){
+      var pts = p.values.map(function(v, i){ return { x: lxPos[i], y: ly(v) }; });
+      var d = pts.map(function(pt, i){ return (i ? 'L' : 'M') + pt.x.toFixed(1) + ' ' + pt.y.toFixed(1); }).join(' ');
+      var dots = pts.map(function(pt, i){
+        return '<circle cx="' + pt.x.toFixed(1) + '" cy="' + pt.y.toFixed(1) + '" r="2.8" fill="' + p.color + '" stroke="#fff" stroke-width="1.3"><title>' + p.name + ' · ' + months[i] + ' · ' + fmtInt(p.values[i]) + ' 件</title></circle>';
+      }).join('');
+      return '<path d="' + d + '" fill="none" stroke="' + p.color + '" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"></path>' + dots;
+    }).join('');
+    var lxLabels = months.map(function(m, i){
+      return '<text x="' + lxPos[i].toFixed(1) + '" y="' + (LH - 6) + '" text-anchor="middle" font-size="9" fill="#778177">' + m + '</text>';
+    }).join('');
+    $('#posTrend').innerHTML = '<svg viewBox="0 0 440 100" role="img" aria-label="三款产品月度趋势">' +
+      '<text x="0" y="9" font-size="9" fill="#9AA29A">产品线趋势</text>' + lGrid + lLines + lxLabels + '</svg>';
+
+    var rows = pos.products.map(function(p){
+      return '<tr>' +
+        '<td><span class="prod"><i class="dot" style="background:' + p.color + '"></i>' + p.name + '</span></td>' +
+        '<td>' + fmtInt(p.values[0]) + '</td>' +
+        '<td>' + fmtInt(p.values[1]) + '</td>' +
+        '<td>' + fmtInt(p.values[2]) + '</td>' +
+      '</tr>';
+    }).join('');
+    var totalRow = '<tr class="total-row"><td>合计</td><td>' + fmtInt(totals[0]) + '</td><td>' + fmtInt(totals[1]) + '</td><td>' + fmtInt(totals[2]) + '</td></tr>';
+    $('#posTable').innerHTML = '<div class="pos-table-wrap"><table class="pos-table">' +
+      '<thead><tr><th>产品线</th><th>7月</th><th>8月</th><th>9月</th></tr></thead>' +
+      '<tbody>' + rows + totalRow + '</tbody></table></div>' +
+      '<div class="pos-insight"><div><b>1.</b> 芒果船系列之前与羊角蜜船和小台芒汉堡合并计算，目前只有芒果船，其他已下市。整体芒果船销量平稳，一周 1.1～1.2 万份。</div><div><b>2.</b> 酸奶膏上市后销量与酸奶碗合并计算。</div></div>';
+  }
+
+  function renderAll(){
+    renderKpis();
+    renderFee();
+    renderTable();
+  }
+
+  function syncPeriodButtons(){
+    $$('.period-btn').forEach(function(b){
+      var active = b.getAttribute('data-month') === state.month;
+      b.classList.toggle('active', active);
+      b.setAttribute('aria-pressed', active ? 'true' : 'false');
+      var m = b.getAttribute('data-month');
+      var count = m === 'all' ? NOTES.length : notesFor(m).length;
+      var badge = b.querySelector('.count');
+      if(badge) badge.textContent = count;
+    });
+  }
+
+
+  function initAdminEditor(){
+    var NOTE_API = 'https://qieguo-note.jxy19991215.workers.dev';
+    var TOKEN_KEY = 'qieguo_admin_token';
+    var POLL_MS = 15000;
+    var text = $('#adminText');
+    var entry = $('#adminEntryBtn');
+    var actions = $('#editorActions');
+    var status = $('#editorStatus');
+    var meta = $('#noteMeta');
+    var modal = $('#adminModal');
+    var pwd = $('#adminPassword');
+    var err = $('#adminError');
+    var token = '';
+    var isAdmin = false;
+    var savedText = '';
+
+    function getToken(){ try{ return sessionStorage.getItem(TOKEN_KEY) || ''; }catch(e){ return ''; } }
+    function setToken(v){ try{ if(v) sessionStorage.setItem(TOKEN_KEY, v); else sessionStorage.removeItem(TOKEN_KEY); }catch(e){} }
+    function fmtUpdated(iso){
+      var d = new Date(iso);
+      if(isNaN(d.getTime())) return '';
+      function p(n){ return (n < 10 ? '0' : '') + n; }
+      return (d.getMonth() + 1) + '月' + d.getDate() + '日 ' + p(d.getHours()) + ':' + p(d.getMinutes());
+    }
+    function setMeta(iso, content){
+      var hasContent = String(content == null ? '' : content).trim().length > 0;
+      meta.textContent = hasContent ? '所有人可见 · 更新于 ' + fmtUpdated(iso) : '所有人可见 · 暂无补充说明';
+    }
+    function setAdminMode(on){
+      isAdmin = !!on;
+      text.readOnly = !on;
+      text.classList.toggle('editing', on);
+      actions.hidden = !on;
+      entry.textContent = on ? '管理员模式' : '管理员登录';
+      entry.classList.toggle('active', on);
+      if(!on) status.textContent = '';
+    }
+    function applyShared(data, force){
+      var content = data && data.content != null ? String(data.content) : '';
+      savedText = content;
+      var editing = isAdmin && (document.activeElement === text || text.dataset.dirty === '1');
+      if(force || !editing){
+        text.value = content;
+        text.dataset.dirty = '';
+      }
+      setMeta(data && data.updated_at, content);
+    }
+    function loadNote(force){
+      fetch(NOTE_API + '/note', { cache: 'no-store' })
+        .then(function(r){ if(!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+        .then(function(d){ applyShared(d, !!force); })
+        .catch(function(){ meta.textContent = '共享说明暂时无法加载，请检查网络'; });
+    }
+    function openModal(){
+      if(isAdmin){
+        text.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        setTimeout(function(){ text.focus(); }, 250);
+        return;
+      }
+      pwd.value = '';
+      err.textContent = '';
+      modal.hidden = false;
+      setTimeout(function(){ pwd.focus(); }, 30);
+    }
+    function closeModal(){ modal.hidden = true; }
+    function logout(){
+      token = '';
+      setToken('');
+      setAdminMode(false);
+      status.textContent = '';
+    }
+    function login(){
+      var password = pwd.value;
+      if(!password){ err.textContent = '请输入密码'; return; }
+      err.textContent = '';
+      var btn = $('#adminConfirm');
+      btn.disabled = true;
+      fetch(NOTE_API + '/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ password: password })
+      })
+        .then(function(r){
+          return r.json().catch(function(){ return {}; }).then(function(d){
+            if(!r.ok) throw new Error(d.error || '密码错误');
+            return d;
+          });
+        })
+        .then(function(d){
+          token = d.token || '';
+          setToken(token);
+          setAdminMode(true);
+          closeModal();
+          status.textContent = '管理员模式';
+          text.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          setTimeout(function(){ text.focus(); }, 250);
+        })
+        .catch(function(e){ err.textContent = e.message || '登录失败，请检查网络'; pwd.select(); })
+        .finally(function(){ btn.disabled = false; });
+    }
+
+    token = getToken();
+    text.addEventListener('input', function(){
+      text.dataset.dirty = '1';
+      status.textContent = '未保存';
+    });
+    entry.addEventListener('click', openModal);
+    $('#adminCancel').addEventListener('click', closeModal);
+    $('#adminConfirm').addEventListener('click', login);
+    pwd.addEventListener('keydown', function(e){
+      if(e.key === 'Enter'){ e.preventDefault(); login(); }
+      if(e.key === 'Escape') closeModal();
+    });
+    modal.addEventListener('click', function(e){ if(e.target === modal) closeModal(); });
+
+    $('#saveTextBtn').addEventListener('click', function(){
+      if(!isAdmin) return;
+      var btn = this;
+      btn.disabled = true;
+      status.textContent = '保存中…';
+      fetch(NOTE_API + '/note', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + token },
+        body: JSON.stringify({ content: text.value })
+      })
+        .then(function(r){
+          return r.json().catch(function(){ return {}; }).then(function(d){
+            if(r.status === 401){ logout(); throw new Error(d.error || '登录已过期，请重新登录'); }
+            if(!r.ok) throw new Error(d.error || '保存失败');
+            return d;
+          });
+        })
+        .then(function(d){
+          savedText = text.value;
+          text.dataset.dirty = '';
+          setMeta(d.updated_at, text.value);
+          status.textContent = '已保存 · 所有访客可见';
+          setTimeout(function(){ if(status.textContent === '已保存 · 所有访客可见') status.textContent = ''; }, 2500);
+        })
+        .catch(function(e){ status.textContent = e.message || '保存失败'; })
+        .finally(function(){ btn.disabled = false; });
+    });
+    $('#cancelTextBtn').addEventListener('click', function(){
+      text.value = savedText;
+      text.dataset.dirty = '';
+      status.textContent = '已还原';
+    });
+    $('#logoutBtn').addEventListener('click', logout);
+
+    setAdminMode(false);
+    loadNote(true);
+    if(token){
+      fetch(NOTE_API + '/session', {
+        headers: { 'Authorization': 'Bearer ' + token },
+        cache: 'no-store'
+      })
+        .then(function(r){ if(!r.ok) throw new Error('expired'); return r.json(); })
+        .then(function(){ setAdminMode(true); })
+        .catch(function(){ token = ''; setToken(''); setAdminMode(false); });
+    }
+    setInterval(function(){ if(document.visibilityState === 'visible') loadNote(false); }, POLL_MS);
+    document.addEventListener('visibilitychange', function(){
+      if(document.visibilityState === 'visible') loadNote(false);
+    });
+  }
+
+  function bindEvents(){
+    $$('.period-group').forEach(function(group){
+      group.addEventListener('click', function(e){
+        var btn = e.target.closest('.period-btn');
+        if(!btn) return;
+        state.month = btn.getAttribute('data-month');
+        syncPeriodButtons();
+        renderAll();
+      });
+    });
+
+    $('#detailTable').addEventListener('click', function(e){
+      var th = e.target.closest('th[data-sort]');
+      if(!th) return;
+      var key = th.getAttribute('data-sort');
+      if(state.sortKey === key){
+        state.sortDir = state.sortDir === 'asc' ? 'desc' : 'asc';
+      }else{
+        state.sortKey = key;
+        state.sortDir = (key === 'author' || key === 'date') ? 'asc' : 'desc';
+      }
+      renderTable();
+    });
+  }
+
+  bindEvents();
+  syncPeriodButtons();
+  renderAll();
+  renderSales();
+  initAdminEditor();
+})();
+</script>
+</body>
+</html>
